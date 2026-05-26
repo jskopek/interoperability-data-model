@@ -20,7 +20,11 @@
       "$comment": "The logo can easily be represented here by a Base64 string",
       "properties": {
         "LAName": {"type": "string"},
-        "LALogo": {"type": "string"},
+        "LALogo": {
+          "type": "string",
+          "contentEncoding": "base64",
+          "contentMediaType": "image/*"
+        },
         "standard":{"type":"string"} 
       },
       "required": ["LAName"]
