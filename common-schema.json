@@ -51,8 +51,8 @@
     "images": { "$ref": "images-schema.json#/schema" },
     "listPriceUSD": { "type": "number" },
     "fileVersion":{"type":"string", "default":"0.0"},
-    "fileDate":{"type":"string","format":"date"},
-    "changeRecord":{"type":"string","format":"textarea"}
+    "fileDate":{"type":"string"},
+    "changeRecord":{"type":"string"}
   },
   "required": [
     "IDMVersion",
