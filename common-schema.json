@@ -13,9 +13,11 @@
   "properties": {
     "IDMVersion": { "const": "1.2 2025-08-10" },
     "license": { "const": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved" },
-    "fileVersion":{"type":"string", "default":"0.0"}, 
-    "fileDate":{"type":"string"},
-    "changeRecord":{"type":"string"},
+    "productName": { "$ref": "productName-schema.json#/schema" },
+    "productIdentifier": { "$ref": "productIdentifier-schema.json#/schema" },
+    "typeSpecificParameters": { "$ref": "typeSpecifics-schema.json#/schema" },
+    "mechanical": { "$ref": "mechanical-schema.json#/schema" },
+    "environmental": { "$ref": "environmental-schema.json#/schema" },
     "productCategory": {
       "type": "string",
       "enum": [
@@ -29,8 +31,6 @@
       ]
     },
     "manufacturer": { "$ref": "manufacturer-schema.json#/schema" },
-    "productName": { "$ref": "productName-schema.json#/schema" },
-    "productIdentifier": { "$ref": "productIdentifier-schema.json#/schema" },
     "productSeries": { "$ref": "productSeries-schema.json#/schema" },
     "datasheetHyperlink": {
       "type": "string",
@@ -45,14 +45,14 @@
     "systemsIntegrators": { "$ref": "distributors-schema.json#/schema" },
     "embargoedCountries": { "$ref": "embargoedCountries-schema.json#/schema" },
     "notRecommendedForNewDesigns": { "type": "boolean" },
-    "typeSpecificParameters": { "$ref": "typeSpecifics-schema.json#/schema" },
-    "mechanical": { "$ref": "mechanical-schema.json#/schema" },
-    "environmental": { "$ref": "environmental-schema.json#/schema" },
     "listingAuthorities": { "$ref": "listingAuthorities-schema.json#/schema" },
     "productWarrantyYrs": { "type": "number" },
     "files": { "$ref": "files-schema.json#/schema" },
     "images": { "$ref": "images-schema.json#/schema" },
-    "listPriceUSD": { "type": "number" }
+    "listPriceUSD": { "type": "number" },
+    "fileVersion":{"type":"string", "default":"0.0"},
+    "fileDate":{"type":"string","format":"date"},
+    "changeRecord":{"type":"string","format":"textarea"}
   },
   "required": [
     "IDMVersion",
