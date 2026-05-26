@@ -16,7 +16,11 @@
         "type": "string",
         "format": "hostname"
       },
-      "coLogo": {"type": "string"}
+      "coLogo": {
+        "type": "string",
+        "contentEncoding": "base64",
+        "contentMediaType": "image/*"
+      }
     },
     "required": [
       "coName",
