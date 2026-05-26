@@ -1,0 +1,9 @@
+name: Redeploy editor on schema change
+on:
+  push:
+    branches: [main]   # or whatever branch you want to track
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
