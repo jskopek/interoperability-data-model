@@ -1,4 +1,3 @@
-@ -0,0 +1,32 @@
 # Move this file to `.github/workflows/redeploy-editor.yml` in the SCHEMA repo
 # (NOT this editor repo). Triggers a Vercel rebuild of the editor whenever
 # the schema repo's main branch changes.
