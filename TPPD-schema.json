@@ -5,6 +5,7 @@
   "fileVersion": "1.0",
   "fileDate":"2025-09-26",  
   "schema": {
+    "title": "Two-Port Passive Device (TPPD)",
     "type": "object",
     "properties": {
       "frequency": {"$ref": "frequency-schema.json#/schema"},
