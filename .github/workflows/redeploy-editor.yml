@@ -1,9 +1,33 @@
+@ -0,0 +1,32 @@
+# Move this file to `.github/workflows/redeploy-editor.yml` in the SCHEMA repo
+# (NOT this editor repo). Triggers a Vercel rebuild of the editor whenever
+# the schema repo's main branch changes.
+#
+# Prerequisites:
+#   1. In the editor's Vercel project: Settings → Git → Deploy Hooks →
+#      create a hook targeting `main`. Copy the URL.
+#   2. In the schema repo: Settings → Secrets and variables → Actions →
+#      add `VERCEL_DEPLOY_HOOK` with that URL.
+#
+# That's it. Every push to `main` here fires a fresh editor deploy on
+# Vercel, which clones this repo at build time (via SCHEMA_GIT_URL set on
+# the Vercel project) and rebuilds with the latest schema.
+
 name: Redeploy editor on schema change
+
 on:
   push:
-    branches: [main]   # or whatever branch you want to track
+    branches: [main]
+  # Lets you manually trigger a deploy from the Actions tab without
+  # needing to push a commit (useful when first wiring things up).
+  workflow_dispatch:
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
+      - name: Trigger Vercel deploy hook
+        run: |
+          curl -fsS -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}" \
+            -H "Content-Type: application/json" \
+            -d '{"ref":"${{ github.ref_name }}","sha":"${{ github.sha }}"}'
