@@ -71,7 +71,7 @@
           "none"
         ]
       },
-      "RoHScompliant": {"type": "boolean"},
+      "RoHScompliant": {"type": "boolean", "title": "RoHS Compliant"},
       "DomesticComponentRequirement": {"type": "boolean"}
     }
   }
