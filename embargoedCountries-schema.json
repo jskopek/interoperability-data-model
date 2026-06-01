@@ -3,21 +3,13 @@
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "description": "List countries to which it is forbidden by law to ship this product.",
   "fileVersion": "1.0",
-  "fileDate":"2025-09-26",  
+  "fileDate": "2026-06-01",
   "schema": {
     "oneOf": [
-      {
-        "type": "string",
-        "minLength": 2,
-        "maxLength": 2
-      },
+      { "$ref": "countryCode-schema.json#/schema" },
       {
         "type": "array",
-        "items": {
-          "type": "string",
-          "minLength": 2,
-          "maxLength": 2
-        }
+        "items": { "$ref": "countryCode-schema.json#/schema" }
       }
     ]
   }
