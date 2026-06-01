@@ -1,32 +1,72 @@
-# Move this file to `.github/workflows/redeploy-editor.yml` in the SCHEMA repo
-# (NOT this editor repo). Triggers a Vercel rebuild of the editor whenever
-# the schema repo's main branch changes.
-#
-# Prerequisites:
-#   1. In the editor's Vercel project: Settings → Git → Deploy Hooks →
-#      create a hook targeting `main`. Copy the URL.
-#   2. In the schema repo: Settings → Secrets and variables → Actions →
-#      add `VERCEL_DEPLOY_HOOK` with that URL.
-#
-# That's it. Every push to `main` here fires a fresh editor deploy on
-# Vercel, which clones this repo at build time (via SCHEMA_GIT_URL set on
-# the Vercel project) and rebuilds with the latest schema.
-
-name: Redeploy editor on schema change
+name: Deploy schema (and report build result)
 
 on:
   push:
     branches: [main]
-  # Lets you manually trigger a deploy from the Actions tab without
-  # needing to push a commit (useful when first wiring things up).
   workflow_dispatch:
+
+# Validation runs inside the Vercel build (it runs build-schema, which fails on a
+# bad schema). This job triggers that build and WAITS for its result, so a failed
+# build shows up as a red ✗ on the schema commit instead of passing silently.
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Vercel deploy hook
+      - name: Trigger deploy and wait for the Vercel build
+        env:
+          DEPLOY_HOOK:  ${{ secrets.VERCEL_DEPLOY_HOOK }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          PROJECT_ID:   ${{ secrets.VERCEL_PROJECT_ID }}
+          TEAM_ID:      ${{ secrets.VERCEL_TEAM_ID }}   # leave unset for a personal account
         run: |
-          curl -fsS -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}" \
-            -H "Content-Type: application/json" \
-            -d '{"ref":"${{ github.ref_name }}","sha":"${{ github.sha }}"}'
+          set -euo pipefail
+          AUTH="Authorization: Bearer $VERCEL_TOKEN"
+          Q=""; [ -n "${TEAM_ID:-}" ] && Q="teamId=$TEAM_ID"
+          START="$(date +%s)000"   # ms; ignore deployments created before now
+
+          echo "→ Triggering Vercel deploy hook…"
+          curl -fsS -X POST "$DEPLOY_HOOK" -o /dev/null
+
+          echo "→ Locating the new deployment…"
+          DEPLOY_UID=""
+          for i in $(seq 1 12); do
+            sleep 5
+            RESP=$(curl -fsS -H "$AUTH" \
+              "https://api.vercel.com/v6/deployments?projectId=$PROJECT_ID&limit=1${Q:+&$Q}")
+            CREATED=$(echo "$RESP" | jq -r '.deployments[0].created // 0')
+            if [ "$CREATED" -ge "$START" ]; then
+              DEPLOY_UID=$(echo "$RESP" | jq -r '.deployments[0].uid')
+              break
+            fi
+            echo "   …waiting for the deploy to register"
+          done
+          if [ -z "$DEPLOY_UID" ]; then
+            echo "::error::Could not find the triggered deployment — check Vercel."
+            exit 1
+          fi
+          echo "→ Watching deployment $DEPLOY_UID"
+
+          for i in $(seq 1 120); do        # ~20 min cap (10s * 120)
+            STATE=$(curl -fsS -H "$AUTH" \
+              "https://api.vercel.com/v13/deployments/$DEPLOY_UID${Q:+?$Q}" \
+              | jq -r '.readyState // .status // "UNKNOWN"')
+            echo "   [$i] $STATE"
+            case "$STATE" in
+              READY)
+                echo "✅ Schema deployed successfully."
+                exit 0 ;;
+              ERROR|CANCELED)
+                echo "::error::Vercel build $STATE — the schema change did NOT deploy (last good version stays live)."
+                echo "---- recent build log ----"
+                curl -fsS -H "$AUTH" \
+                  "https://api.vercel.com/v3/deployments/$DEPLOY_UID/events${Q:+?$Q}" \
+                  | jq -r '.[]? | (.payload.text // .text // empty)' | tail -60 || true
+                echo "--------------------------"
+                echo "Full logs: open deployment $DEPLOY_UID in the Vercel dashboard."
+                exit 1 ;;
+            esac
+            sleep 10
+          done
+          echo "::error::Timed out waiting for the Vercel deployment."
+          exit 1
