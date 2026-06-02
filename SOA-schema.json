@@ -16,7 +16,7 @@
       "maxCurrentIn": {"$ref": "currentRating-schema.json#/schema"},
       "maxPowerIn": {"$ref": "powerRating-schema.json#/schema"},
       "maxPowerOut": {"$ref": "powerRating-schema.json#/schema"},
-      "maxVoltageToGround": {"$ref": "voltageRating-schema.json#/schema"},
+      "maxVoltageToGround": {"$ref": "voltageRating-schema.json#/schema"}
     }
   }
 }
