@@ -14,6 +14,11 @@
         "pattern": "^C[0-9]+(.[0-9]+)?$"
       },
       "typicalCycleLife": {"type": "number"},
+      "minSOC":{
+        "title":"..when discharged to this percentage",
+        "type":"string",
+        "pattern":"^[0-9][0-9]%$"
+      },
       "chemistry": {"type": "string"},
       "BMSPort": {"$ref":"controlPort-schema.json#/schema"}
     },
