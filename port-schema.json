@@ -60,7 +60,6 @@
         ]
       },
       "transferTime":{"$ref":"duration-schema.json#/schema"}, 
-      "maxVoltageToGround": {"$ref": "voltageRating-schema.json#/schema"},
       "poleLocallyGrounded": {"$ref": "grounding-schema.json#/schema"},
       "groundWire": {"$ref": "PE-schema.json#/schema"},
       "connector": {"$ref": "connection-schema.json#/schema"},
