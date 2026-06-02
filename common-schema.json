@@ -35,7 +35,7 @@
     "productSeries": { "$ref": "productSeries-schema.json#/schema" },
     "datasheetHyperlink": {
       "type": "string",
-      "description":"This should hyperlink to a web page or PDf that is specific to this product.  (If there isn't one, leave blank.)"
+      "description":"This should hyperlink to a web page or PDf that is specific to this product.  (If there isn't one, leave blank.)",
       "format": "uri"
     },
     "description": {
