@@ -34,8 +34,7 @@
         ]
       },
       "insulationMaterial": {"type": "string"},
-      "armored": {"type": "boolean"},
-      "environmental": {"$ref": "environmental-schema.json#/schema"}
+      "armored": {"type": "boolean"}
     }
   }
 }
