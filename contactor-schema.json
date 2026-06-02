@@ -2,12 +2,11 @@
   "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "$comment": "This schema is suitable for any mechanical contactor or relay",
-  "fileVersion": "1.0",
-  "fileDate":"2025-09-26",  
+  "fileVersion": "1.1",
+  "fileDate":"2026-06-02",  
   "schema": {
     "type": "object",
     "properties": {
-      "coilNominalVolts": {"$ref": "voltageRating-schema.json#/schema"},
       "coilACDC": {
         "type": "string",
         "enum": [
@@ -17,7 +16,10 @@
         ]
       },
       "coilResistance": {"$ref": "resistanceValue-schema.json#/schema"},
-      "coilSOA": {"$ref": "SOA-schema.json#/schema"},
+      "minDCVolts":{"title":"Recommended coil DC operating voltage",
+        "$ref": "voltageRating-schema.json#/schema"},
+      "minACVolts":{"title":"Recommended coil AC operating voltage",
+        "$ref": "voltageRating-schema.json#/schema"},
       "contactRating": {"$ref": "TPPD-schema.json#/schema"},
       "coilContactIsolationVolts": {"$ref": "voltageRating-schema.json#/schema"},
       "numberOfPolesNormallyOpen": {
