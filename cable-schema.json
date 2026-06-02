@@ -12,6 +12,12 @@
         "minimum": 1
       },
       "length": {"$ref": "dimensions-schema.json#/schema"},
+      "OD":{"title":"Outside diameter",
+         "$ref": "dimensions-schema.json#/schema"
+      },
+      "minRad":{"title":"Minimum Bending Radius",
+         "$ref": "dimensions-schema.json#/schema"
+      },
       "conductorSize": {"$ref": "wireSizes-schema.json#/schema"},
       "strandsPerConductor": {
         "type": "integer",
