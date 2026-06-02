@@ -16,7 +16,6 @@
     "productName": { "$ref": "productName-schema.json#/schema" },
     "productIdentifier": { "$ref": "productIdentifier-schema.json#/schema" },
     "typeSpecificParameters": { "$ref": "typeSpecifics-schema.json#/schema" },
-    "mechanical": { "$ref": "mechanical-schema.json#/schema" },
     "environmental": { "$ref": "environmental-schema.json#/schema" },
     "productCategory": {
       "type": "string",
