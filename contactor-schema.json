@@ -8,11 +8,12 @@
     "type": "object",
     "properties": {
       "coilACDC": {
+        "title":"Coil AC or DC?",
         "type": "string",
         "enum": [
           "AC",
           "DC",
-          "AC/DC"
+          "Either"
         ]
       },
       "coilResistance": {"$ref": "resistanceValue-schema.json#/schema"},
@@ -20,8 +21,9 @@
         "$ref": "voltageRating-schema.json#/schema"},
       "minACVolts":{"title":"Recommended coil AC operating voltage",
         "$ref": "voltageRating-schema.json#/schema"},
-      "contactRating": {"$ref": "TPPD-schema.json#/schema"},
-      "coilContactIsolationVolts": {"$ref": "voltageRating-schema.json#/schema"},
+     "coilContactIsolationVolts": {"$ref": "voltageRating-schema.json#/schema"},
+     "contactRating": {"title":"Contact Rating",
+          "$ref": "TPPD-schema.json#/schema"},
       "numberOfPolesNormallyOpen": {
         "type": "integer",
         "minimum": 0
