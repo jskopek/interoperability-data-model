@@ -9,7 +9,7 @@
       "ratedVoltage":{"$ref":"voltageRating-schema.json#/schema"},
       "ratedCurrent":{"$ref":"currentRating-schema.json#/schema"},
       "resPerMeter":{"title":"Resistance per conductor per meter",
-        "$ref":"restanceValue-schema.json#/schema"},
+        "$ref":"resistanceValue-schema.json#/schema"},
       "numberOfConductors": {
         "type": "integer",
         "minimum": 1
