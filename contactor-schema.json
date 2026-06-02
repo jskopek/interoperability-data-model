@@ -23,7 +23,7 @@
         "$ref": "voltageRating-schema.json#/schema"},
      "coilContactIsolationVolts": {"$ref": "voltageRating-schema.json#/schema"},
      "contactRating": {"title":"Contact Rating",
-          "$ref": "TPPD-schema.json#/schema"},
+          "$ref": "mechanicalContact-schema.json#/schema"},
       "numberOfPolesNormallyOpen": {
         "type": "integer",
         "minimum": 0
