@@ -3,7 +3,10 @@
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "$comment": "This JSON schema defines the Safe Operating Area of any electrical power port",
   "fileVersion": "1.0",
-  "fileDate":"2025-09-26",    "schema": {
+  "fileDate":"2025-09-26",
+  "description":"The Safe Operating Area (SOA) of a port defines the maximum voltage, current or power that can flow through the port without damaging the product.  
+  Note that this says nothing about the amount of current or power that will actually flow (which may be determined by the V-I characteristics of the port, or software or firmware).",
+  "schema": {
     "title": "Safe Operating Area (SOA)",
     "type": "object",
     "properties": {
