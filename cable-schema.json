@@ -1,12 +1,15 @@
 {
   "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
-  "fileVersion": "1.0",
-  "fileDate":"2025-09-26",  
+  "fileVersion": "1.1",
+  "fileDate":"2026-06-02",  
   "schema": {
     "type": "object",
     "properties": {
-      "TPPD": {"$ref": "TPPD-schema.json#/schema"},
+      "ratedVoltage":{"$ref":"voltageRating-schema.json#/schema"},
+      "ratedCurrent":{"$ref":"currentRating-schema.json#/schema"},
+      "resPerMeter":{"title":"Resistance per conductor per meter",
+        "$ref":"restanceValue-schema.json#/schema"},
       "numberOfConductors": {
         "type": "integer",
         "minimum": 1
