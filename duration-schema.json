@@ -17,15 +17,15 @@
           "units": {
             "type": "string",
             "enum": [
-              "ns","nanoseconds",
-              "µs","microseconds",
-              "ms","milliseconds",
-              "s","secs","seconds",
-              "mins","minutes",
-              "hrs","hours",
+              "ns",
+              "µs",
+              "ms",
+              "s",
+              "mins",
+              "hrs",
               "days",
-              "wks","weeks",
-              "yrs","years"
+              "wks",
+              "yrs"
             ]
           }
         },
