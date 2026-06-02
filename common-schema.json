@@ -53,7 +53,7 @@
     "listPriceUSD": { "type": "number" },
     "fileVersion":{"type":"string", "default":"0.0"},
     "fileDate":{"type":"string", "format": "date"},
-    "changeRecord": { "$ref": "changeRecord-schema.json#/schema" }
+    "changeRecord":{"$ref": "changeRecord-schema.json#/schema"}
   },
   "required": [
     "IDMVersion",
