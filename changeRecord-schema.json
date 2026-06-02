@@ -1,0 +1,43 @@
+{
+  "IDMVersion": "1.2 2025-08-10",
+  "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
+  "description": "A chronological log of changes to this product file. Add one entry per revision so the history stays structured and machine-readable instead of a single free-text blob. PROTOTYPE: the exact fields are still to be confirmed with Brian.",
+  "fileVersion": "1.0",
+  "fileDate": "2025-09-26",
+  "schema": {
+    "type": "array",
+    "title": "Change Record",
+    "items": {
+      "type": "object",
+      "title": "Change",
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date",
+          "title": "Date",
+          "description": "The date this change was made (YYYY-MM-DD)."
+        },
+        "version": {
+          "type": "string",
+          "title": "Version",
+          "description": "The product file version this change produced, e.g. \"1.02\"."
+        },
+        "author": {
+          "type": "string",
+          "title": "Author",
+          "description": "Who made the change (name or initials)."
+        },
+        "note": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Note",
+          "description": "What changed and why."
+        }
+      }
+    }
+  },
+  "selectionTool": {
+    "filter": false,
+    "display": false
+  }
+}
