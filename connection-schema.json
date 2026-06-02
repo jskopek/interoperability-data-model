@@ -21,7 +21,7 @@
         "type": "object",
         "properties": {
           "connectionType": {"const": "unterminated"},
-          "title":"Unterminated cable"
+          "unterminated"{"title":"Unterminated cable"}
         },
         "required": [
           "connectionType"
