@@ -60,17 +60,17 @@
       ],
       [
         "Exp-",
-        "Expects -ve ground"
+        "Expects -ve ground",
         "No pole is grounded, but the design expects that the negative will be close to ground potential"
       ],
       [
         "Exp+",
-        "Expects +ve ground"
+        "Expects +ve ground",
         "No pole is grounded, but the design expects that the positive will be close to ground potential"
       ],
       [
         "ExpN",
-        "Expects N ground"
+        "Expects N ground",
         "No pole is grounded, but the design expects that the AC Neutral will be close to ground potential"
       ]
     ]
