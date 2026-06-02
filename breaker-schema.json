@@ -13,7 +13,8 @@
       },
       "tripCriteria": {"$ref": "tripCriteria-schema.json#/schema"},
       "detectionMethod": {"$ref": "breakerType-schema.json#/schema"},
-      "unsafeIfDCpresent": {"type": "boolean"},
+      "unsafeIfDCpresent": {"title":"Unsafe if DC present?",
+        "type": "boolean"},
       "isolationMechanism": {
         "type": "string",
         "enum": [
