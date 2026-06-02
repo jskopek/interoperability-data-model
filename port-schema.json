@@ -44,7 +44,7 @@
             "properties": {
               "portType": {"const": "constantResistance"},
               "description":"The oldest type of electrical load, but now limited to electric heaters",
-              "currentLevel": {"$ref": "resistanceValue-schema.json#/schema"}
+              "resistanceValue": {"$ref": "resistanceValue-schema.json#/schema"}
             }
           },
           {
@@ -52,7 +52,7 @@
             "properties": {
               "portType": {"const": "batteryChargingPort"},
               "description":"Battery charging ports have special coltage/current/time characteristics, specific to each type of battery chemistry.",
-              "currentLevel": {"$ref": "batteryChargingPort-schema.json#/schema"}
+              "chargeCharacteristics": {"$ref": "batteryChargingPort-schema.json#/schema"}
             }
           },
           {
