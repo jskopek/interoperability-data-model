@@ -4,7 +4,7 @@
   "$comment": "Schema for any two-port passive device (TPPD).  If necessary, the current return path is assumed and assumed to have zero resistance",
   "fileVersion": "1.0",
   "fileDate":"2025-09-26", 
-  "description": "This is for any product that has the same current in and out",
+  "description": "This is for any two-port product that has the same current in and out.  If the product only supports a single current path, the return path is implied and assumed to have zero resistance.  Examples include, fuses, switches, connector pairs, busbars.",
   "schema": {
     "title": "Two-Port Passive Device (TPPD)",
     "type": "object",
