@@ -64,6 +64,7 @@
       "groundWire": {"$ref": "PE-schema.json#/schema"},
       "connector": {"$ref": "connection-schema.json#/schema"},
       "prechargeProtection": {
+        "description":"When a load is first powered up, any capacitance on the input has to charge extremely rapidly to the supply voltage.  This causes a large inrush current - only limited by the parasitic resistance in the system.  This current spike may damage connectors and switch contacts, and/or cause a momentary dip in the supply voltage experienced by other loads connected to the supply.  Some DC loads include a circuit to limit the initial precharge current, and some supplies require the load to have it.",
         "type": "string",
         "enum": [
           "provided",
