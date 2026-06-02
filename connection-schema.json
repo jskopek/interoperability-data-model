@@ -20,6 +20,16 @@
       {
         "type": "object",
         "properties": {
+          "connectionType": {"const": "unterminated"},
+          "title":"Unterminated cable"
+        },
+        "required": [
+          "connectionType"
+        ]
+      },
+      {
+        "type": "object",
+        "properties": {
           "connectionType": {"const": "terminal"},
           "terminal": {"$ref": "wireSizes-schema.json#/schema"}
         },
