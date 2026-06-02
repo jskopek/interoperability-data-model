@@ -37,7 +37,11 @@
         ]
       },
       "insulationMaterial": {"type": "string"},
-      "armored": {"type": "boolean"}
+      "armored": {"type": "boolean"},
+      "conA":{"title":"Connector - A-end",
+      "$ref":"connection-schema.json#/schema"},
+      "conB":{"title":"Connector - B-end",
+      "$ref":"connection-schema.json#/schema"}
     }
   }
 }
