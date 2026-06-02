@@ -3,7 +3,8 @@
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "$comment": "Schema for any two-port passive device (TPPD).  If necessary, the current return path is assumed and assumed to have zero resistance",
   "fileVersion": "1.0",
-  "fileDate":"2025-09-26",  
+  "fileDate":"2025-09-26", 
+  "description": "This is for any product that has the same current in and out",
   "schema": {
     "title": "Two-Port Passive Device (TPPD)",
     "type": "object",
