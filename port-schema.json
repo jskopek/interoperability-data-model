@@ -25,7 +25,7 @@
             "type": "object",
             "properties": {
               "portType": {"const": "constantCurrent"},
-              "description":"LED drivers often have a constant current characteristic", to ensure that all LEDs are equally bright.  The constant current circuit may be integral to the LED lamp, or it may be in a separate LED driver.",  
+              "description":"LED drivers often have a constant current characteristic, to ensure that all LEDs are equally bright.  The constant current circuit may be integral to the LED lamp, or it may be in a separate LED driver.",  
               "currentLevel": {"$ref": "currentRating-schema.json#/schema"}
             }
           },
