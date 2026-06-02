@@ -8,7 +8,7 @@
     "oneOf": [
        {
         "type": "string",
-        "pattern": "^([0-9]+(.[0-9]+)?)(((n|&micro;|m)?s)|min|hrs|days|wks|mon|yrs)$"
+        "pattern": "^([0-9]+(.[0-9]+)?)(((n|µ|m)?s)|min|hrs|days|wks|mon|yrs)$"
       },
       {
         "type": "object",
@@ -18,7 +18,7 @@
             "type": "string",
             "enum": [
               "ns","nanoseconds",
-              "&micro;s","microseconds",
+              "µs","microseconds",
               "ms","milliseconds",
               "s","secs","seconds",
               "mins","minutes",

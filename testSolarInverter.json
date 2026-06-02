@@ -31,7 +31,7 @@
           },
           "connector": {
             "connectionType": "terminal",
-            "terminal": "4AWG, 25mm&sup2;"
+            "terminal": "4AWG, 25mm²"
           },
           "poleLocallyGrounded": "Float",
           "groundWire": "required"
@@ -50,7 +50,7 @@
           },
           "connector": {
             "connectionType": "terminal",
-            "terminal": "4AWG, 25mm&sup2;"
+            "terminal": "4AWG, 25mm²"
           },
           "poleLocallyGrounded": "Float",
           "groundWire": "offered"
@@ -70,7 +70,7 @@
             "transferTime": "4ms",
           "connector": {
             "connectionType": "terminal",
-            "terminal": "4AWG, 25mm&sup2;"
+            "terminal": "4AWG, 25mm²"
           },
           "poleLocallyGrounded": "Float",
           "groundWire": "offered"
@@ -90,7 +90,7 @@
           "groundWire": "offered",
           "connector": {
             "connectionType": "terminal",
-            "terminal": "10AWG, 6.0mm&sup2;"
+            "terminal": "10AWG, 6.0mm²"
           }
         },
         {
@@ -108,7 +108,7 @@
           "groundWire": "offered",
           "connector": {
             "connectionType": "terminal",
-            "terminal": "10AWG, 6.0mm&sup2;"
+            "terminal": "10AWG, 6.0mm²"
           }
         },
         {

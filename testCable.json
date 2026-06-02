@@ -30,7 +30,7 @@
             "conductorMaterial": "copper",
             "length": "10ft",
             "numberOfConductors": 2,
-            "conductorSize": "10AWG, 6.0mm&sup2;"
+            "conductorSize": "10AWG, 6.0mm²"
         }
     },
     "listingAuthorities": [

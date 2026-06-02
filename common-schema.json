@@ -38,6 +38,7 @@
     },
     "description": {
       "type": "string",
+      "format": "textarea",
       "minLength": 0,
       "maxLength": 65535
     },
@@ -52,7 +53,7 @@
     "listPriceUSD": { "type": "number" },
     "fileVersion":{"type":"string", "default":"0.0"},
     "fileDate":{"type":"string", "format": "date"},
-    "changeRecord":{"type":"string", "format": "textarea"}
+    "changeRecord": { "$ref": "changeRecord-schema.json#/schema" }
   },
   "required": [
     "IDMVersion",
