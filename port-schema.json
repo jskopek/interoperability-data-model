@@ -12,6 +12,7 @@
       "connectionType": {"$ref": "phase-schema.json#/schema"},
       "SOA": {"$ref": "SOA-schema.json#/schema"},
       "VIrelationship": {
+        "title":"V-I relationship",
         "oneOf": [
           {
             "type": "object",
