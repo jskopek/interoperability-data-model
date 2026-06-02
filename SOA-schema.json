@@ -4,34 +4,13 @@
   "$comment": "This JSON schema defines the Safe Operating Area of any electrical power port",
   "fileVersion": "1.0",
   "fileDate":"2025-09-26",
-  "description":"The Safe Operating Area (SOA) of a port defines the maximum voltage, current or power that can flow through the port without damaging the product.\nNote that this says nothing about the amount of current or power that will actually flow (which may be determined by the V-I characteristics of the port, or software or firmware).",
+  "description":"The Safe Operating Area (SOA) of a port defines the maximum voltage across the terminals, orcurrent or power that can flow through the port without damaging the product.\nNote that this says nothing about the amount of current or power that will actually flow (which may be determined by the V-I characteristics of the port, or software or firmware).",
   "schema": {
     "title": "Safe Operating Area (SOA)",
     "type": "object",
     "properties": {
-      "minVoltage": {"$ref": "voltageRating-schema.json#/schema"},
+      "maxReverseVoltage": {"$ref": "voltageRating-schema.json#/schema"},
       "maxVoltage": {"$ref": "voltageRating-schema.json#/schema"},
-      "nominalVoltage": {"$ref": "voltageRating-schema.json#/schema"},
-      "voltage": {
-        "type": "object",
-        "properties": {
-          "min": {"type": "number"},
-          "max": {"type": "number"},
-          "nominal": {"type": "number"},
-          "units": {
-            "type": "string",
-            "enum": [
-              "mV",
-              "V",
-              "kV",
-              "Vrms",
-              "kVrms"
-            ]
-          }
-        },
-        "required": ["units"],
-        "additionalProperties": false
-      },
       "maxCurrentOut": {"$ref": "currentRating-schema.json#/schema"},
       "maxCurrentIn": {"$ref": "currentRating-schema.json#/schema"},
       "maxPowerIn": {"$ref": "powerRating-schema.json#/schema"},
