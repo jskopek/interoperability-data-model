@@ -14,7 +14,7 @@
     "IDMVersion": { "const": "1.2 2025-08-10" },
     "license": { "const": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved" },
     "productName": { "$ref": "productName-schema.json#/schema" },
-    "productIdentifier": { "$ref": "productIdentifier-schema.json#/schema" },
+    "productPartNumber": { "$ref": "productIdentifier-schema.json#/schema" },
     "typeSpecificParameters": { "$ref": "typeSpecifics-schema.json#/schema" },
     "mechanical": { "$ref": "mechanical-schema.json#/schema" },
     "environmental": { "$ref": "environmental-schema.json#/schema" },
