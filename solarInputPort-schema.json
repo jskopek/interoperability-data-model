@@ -5,6 +5,7 @@
   "fileVersion": "1.0",
   "fileDate":"2025-09-26",  
   "schema": {
+    "title":"Solar or Wind turbine Input",
     "type": "object",
     "properties": {
       "portType": {
