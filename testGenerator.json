@@ -58,18 +58,18 @@
         "mountingType": [
           "Free-standing"
         ]
-      },
-      "environmental": {
-        "operatingTemperature": {
-          "min": 0,
-          "max": 50,
-          "unit": "°C"
-        },
-        "ingressProtection_IP": "IP21",
-        "coolingMethod": "passive",
-        "RoHScompliant": true
       }
     }
+  },
+  "environmental": {
+    "operatingTemperature": {
+      "min": 0,
+      "max": 50,
+      "unit": "°C"
+    },
+    "ingressProtection_IP": "IP21",
+    "coolingMethod": "passive",
+    "RoHScompliant": true
   },
   "productCategory": "powerSource",
   "manufacturer": {
