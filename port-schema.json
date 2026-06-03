@@ -57,7 +57,6 @@
             }
           },
           {
-            "title":"Solar or Wind turbine Input",
             "description":"Input port for cables from solar panels or wind turbine, typically with an MPPT characteristic",
             "type": "object",
             "properties": {
