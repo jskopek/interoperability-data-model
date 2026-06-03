@@ -1,0 +1,100 @@
+{
+  "$schema": "common-schema.json",
+  "IDMVersion": "1.2 2025-08-10",
+  "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
+  "productName": "SIP 03920 Portable Generator",
+  "productIdentifier": "12867",
+  "typeSpecificParameters": {
+    "nonRenewableSource": {
+      "outputPort": {
+        "portName": "Mains out",
+        "frequency": "P50",
+        "connectionType": "P1S",
+        "VIrelationship": {
+          "portType": "constantVoltage",
+          "openCctVolts": {
+            "value": 230,
+            "units": "Vrms"
+          }
+        },
+        "poleLocallyGrounded": "Float",
+        "groundWire": "neither",
+        "connector": {
+          "connectionType": "plugAndSocket",
+          "type": "BS.1363",
+          "gender": "Socket"
+        }
+      },
+      "alternativeOutput": {
+        "portName": "12V DC",
+        "frequency": "DC",
+        "connectionType": "DC",
+        "VIrelationship": {
+          "portType": "constantVoltage",
+          "openCctVolts": {
+            "value": 12,
+            "units": "V"
+          }
+        },
+        "poleLocallyGrounded": "Float",
+        "groundWire": "neither",
+        "connector": {
+          "connectionType": "plugAndSocket",
+          "type": "Cigar lighter",
+          "gender": "Socket"
+        }
+      },
+      "mechanical": {
+        "size": {
+          "units": "cm",
+          "length": 65,
+          "width": 45,
+          "height": 45
+        },
+        "weight": {
+          "value": 21,
+          "units": "kg"
+        },
+        "mountingType": [
+          "Free-standing"
+        ]
+      },
+      "environmental": {
+        "operatingTemperature": {
+          "min": 0,
+          "max": 50,
+          "unit": "°C"
+        },
+        "ingressProtection_IP": "IP21",
+        "coolingMethod": "passive",
+        "RoHScompliant": true
+      }
+    }
+  },
+  "productCategory": "powerSource",
+  "manufacturer": {
+    "coName": "Draper",
+    "webHomePageURL": "drapertools.com"
+  },
+  "productSeries": "Inverter generators",
+  "datasheetHyperlink": "https://www.drapertools.com/product/95176/petrol-inverter-generator-700w/",
+  "description": "This is just a randomly chosen petrol generator.",
+  "notRecommendedForNewDesigns": false,
+  "listingAuthorities": [
+    {
+      "LAName": "UL",
+      "standard": "248-14 File E33925"
+    }
+  ],
+  "productWarrantyYrs": 1,
+  "fileVersion": "1.0",
+  "fileDate": "2026-06-03",
+  "changeRecord": [
+    {
+      "date": "2026-06-03",
+      "version": "1.1",
+      "author": "Chris Moller",
+      "note": "Just created a new test file."
+    }
+  ]
+}
