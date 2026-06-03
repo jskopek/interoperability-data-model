@@ -28,7 +28,7 @@
         "webHomePageURL": "www.windandsun.co.uk"
     }
   ],
-  "embargoedCountries": [ "RU", "NK" ],
+  "embargoedCountries": [ "RU", "KP" ],
   "notRecommendedForNewDesigns": false,
   "typeSpecificParameters": {
     "componentType": "solar",
