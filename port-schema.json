@@ -15,10 +15,10 @@
         "title":"V-I relationship",
         "oneOf": [
           {
+            "description":"Constant power loads are typically electronic products - they draw as much power as they need to operate - if the supply voltage falls, the current drawn increases.  Note that this does not mean that the power drawn will not vary, as the appliance does its thing.",
             "type": "object",
             "properties": {
               "portType": {"const": "constantPower"},
-              "description":"Constant power loads are typically electronic products - they draw as much power as they need to operate - if the supply voltage falls, the current drawn increases.  Note that this does not mean that the power drawn will not vary, as the appliance does its thing.",
               "powerLevel": {"$ref": "powerRating-schema.json#/schema"}
             }
           },
