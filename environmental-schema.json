@@ -14,14 +14,15 @@
           "unit": {
             "type": "string",
             "enum": [
-              "C",
-              "F"
+              "°C",
+              "°F"
             ]
           }
         },
         "additionalProperties": false
       },
       "operatingHumidity": {
+        "title":"Relative Humidity in Operation (%)",
         "type": "object",
         "$comment": "IEC 60068-2-11",
         "properties": {
