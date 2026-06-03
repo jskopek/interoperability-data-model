@@ -38,6 +38,7 @@
       "format": "uri"
     },
     "description": {
+      "title":"Product description",
       "type": "string",
       "description":"This is for a free-text description of the product. It should consist only of text, but may be up to 64kbytes long.",
       "format": "textarea",
