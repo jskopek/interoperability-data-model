@@ -57,6 +57,13 @@
             }
           },
           {
+            "description":"Input port for cables from solar panels, typically with an MPPT characteristic",
+            "type": "object",
+            "properties": {
+              "portType": {"const": "solarInputPort"},
+              "portRatings": {"$ref": "solarInputPort-schema.json#/schema"}
+            }
+          },          {
             "description":"The relationship between applied voltage and the current that will flow may be determied by many other factors, including software.  In this case, it will not be possible to predict how much current will flow when something is connected to this port",
             "type": "object",
             "properties": {
