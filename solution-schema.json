@@ -2,8 +2,8 @@
   "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "$comment": "This JSON schema is for any multi-port component",
-  "fileVersion": "1.0",
-  "fileDate":"2025-09-26",  
+  "fileVersion": "1.1",
+  "fileDate":"2026-06-02",  
   "schema": {
     "type": "object",
     "properties": {
@@ -11,7 +11,7 @@
         "type": "array",
         "items": {"$ref": "port-schema.json#/schema"}
       },
-      "controPort": {"$ref": "controlPort-schema.json#/schema"},
+      "controlPort": {"$ref": "controlPort-schema.json#/schema"},
       "functions": {
         "type": "array",
         "items":{
@@ -50,10 +50,14 @@
           } 
         } 
       },
-      "outputsParallelable": {"type": "boolean"},
-      "3for3phase": {"type": "boolean"},
-      "staticPower": {"$ref": "powerRating-schema.json#/schema"},
-      "energyCapacity": {"$ref": "energy-schema.json#/schema"}
+      "outputsParallelable": {"description":"Can outputs be paralleled between two of this product to increase power capability? ",
+        "type": "boolean"},
+      "3for3phase": {"description":"Are three of this product required, in order to support a 3-phase system?",
+        "type": "boolean"},
+      "staticPower": {"description":"The amount of power this product consumes when simply powered up, and not delivering power",
+        "$ref": "powerRating-schema.json#/schema"},
+      "energyCapacity": {"descripton":"If this product contains batteries, how much energy can it store?",
+        "$ref": "energy-schema.json#/schema"}
     }
   }
 }
