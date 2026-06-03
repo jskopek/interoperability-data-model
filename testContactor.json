@@ -73,7 +73,7 @@
     "operatingTemperature": {
       "min": -40,
       "max": 85,
-      "unit": "C"
+      "unit": "°C"
     },
     "operatingHumidity": {"max": 85}
   },
