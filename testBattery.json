@@ -59,7 +59,7 @@
         "operatingTemperature": {
             "min": 0,
             "max": 50,
-            "unit": "C"
+            "unit": "°C"
         },
         "coolingMethod": "passive",
         "operatingHumidity": {
