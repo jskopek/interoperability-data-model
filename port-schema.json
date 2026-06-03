@@ -23,6 +23,7 @@
             }
           },
           {
+            "description":"LED drivers often have a constant current characteristic, to ensure that all LEDs are equally bright.  The constant current circuit may be integral to the LED lamp, or it may be in a separate LED driver.",
             "type": "object",
             "properties": {
               "portType": {"const": "constantCurrent"},
@@ -30,6 +31,7 @@
             }
           },
           {
+            "description":"Most power supplies and all batteries when discharging are Constant-Voltage.  The voltage will dip a certain amount as the current drawn increases.  The voltage-dip/current ratio can be expressed as a Thevenin resistance.",
             "type": "object",
             "properties": {
               "portType": {"const": "constantVoltage"},
@@ -39,6 +41,7 @@
             }
           },
           {
+            "description":"The oldest type of electrical load, but now limited to electric heaters",
             "type": "object",
             "properties": {
               "portType": {"const": "constantResistance"},
@@ -46,6 +49,7 @@
             }
           },
           {
+            "description":"Battery charging ports have special coltage/current/time characteristics, specific to each type of battery chemistry.",
             "type": "object",
             "properties": {
               "portType": {"const": "batteryChargingPort"},
@@ -53,6 +57,7 @@
             }
           },
           {
+            "description":"The relationship between applied voltage and the current that will flow may be determied by many other factors, including software.  In this case, it will not be possible to predict how much current will flow when something is connected to this port",
             "type": "object",
             "properties": {
               "portType": {"const": "VIrelationshipUndefined"}
