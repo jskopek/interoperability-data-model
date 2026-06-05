@@ -11,7 +11,10 @@
         "$ref":"voltageRating-schema.json#/schema"},
       "gndVoltage":{"title":"Rated Voltage phase-to-ground (Uo)",
         "$ref":"voltageRating-schema.json#/schema"},
-      "ratedCurrent":{"$ref":"currentRating-schema.json#/schema"},
+      "ratedCurrent":{"title":"Rated current (buried)",
+         "$ref":"currentRating-schema.json#/schema"},
+      "ventedCurrent":{"title":"Rated current (free air)",
+         "$ref":"currentRating-schema.json#/schema"},
       "resPerMeter":{"title":"Resistance per conductor per meter",
         "$ref":"resistanceValue-schema.json#/schema"},
       "numberOfConductors": {
