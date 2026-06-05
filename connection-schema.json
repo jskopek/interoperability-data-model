@@ -20,12 +20,8 @@
       {
         "type": "object",
         "properties": {
-          "connectionType": {"const": "unterminated"},
-          "unterminated":{"title":"Unterminated cable"}
-        },
-        "required": [
-          "connectionType"
-        ]
+          "connectionType": {"const": "unterminated"}
+        }
       },
       {
         "type": "object",
