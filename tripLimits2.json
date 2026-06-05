@@ -41,7 +41,7 @@
 				{
 					"type": "object",
 					"properties": {
-						"criterion": { "const": "phaseImbalance" }
+						"criterion": { "const": "phaseImbalance" },
 						"neutralCurrent": { "$ref": "currentRating-schema.json#/schema" }
 					}
 				},
