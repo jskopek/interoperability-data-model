@@ -8,6 +8,7 @@
   "changeRecord":"Motor option added 2025-10-08",
   "schema": {
     "type": "object",
+    "title": "Product Type",
     "properties": {
       "battery": {"$ref": "battery-schema.json#/schema"},
       "breaker": {"$ref": "breaker-schema.json#/schema"},
