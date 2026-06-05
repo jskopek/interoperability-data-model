@@ -41,7 +41,7 @@
         "operatingTemperature": {
             "min": -40,
             "max": 185,
-            "unit": "C"
+            "unit": "°C"
         }
     }
 }

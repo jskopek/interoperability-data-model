@@ -27,7 +27,7 @@
         "webHomePageURL": "www.windandsun.co.uk"
     }
   ],
-  "embargoedCountries": [ "RU", "NK" ],
+  "embargoedCountries": [ "RU", "KP" ],
   "notRecommendedForNewDesigns": false,
   "typeSpecificParameters": {
     "componentType": "converter",
@@ -73,7 +73,7 @@
     "operatingTemperature": {
       "min": -20,
       "max": 80,
-      "unit": "C"
+      "unit": "°C"
     }
   },
   "productWarratyYrs": 3,

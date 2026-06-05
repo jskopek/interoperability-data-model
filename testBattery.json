@@ -2,6 +2,8 @@
     "$schema": "common-schema.json",
     "IDMVersion": "1.2 2025-08-10",
     "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
+    "fileVersion":"1.1",
+    "fileDate": "2026-06-03",
     "productCategory": "energyStorage",
     "productName": "10.4kWh Battery Storage",
     "productIdentifier": "HV2600",
@@ -59,7 +61,7 @@
         "operatingTemperature": {
             "min": 0,
             "max": 50,
-            "unit": "C"
+            "unit": "°C"
         },
         "coolingMethod": "passive",
         "operatingHumidity": {

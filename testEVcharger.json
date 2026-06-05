@@ -91,7 +91,7 @@
     "operatingTemperature": {
       "min": -25,
       "max": 55,
-      "unit": "C"
+      "unit": "°C"
     },
     "operatingHumidity%": {"max": 95}
   },

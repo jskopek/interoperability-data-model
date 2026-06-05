@@ -1,8 +1,8 @@
 {
   "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
-  "fileVersion": "1.0",
-  "fileDate":"2025-09-26",  
+  "fileVersion": "1.1",
+  "fileDate":"2026-06-02",  
   "description": "The AC or DC connection type",
   "mandatory": true,
   "schema": {
@@ -10,7 +10,8 @@
     "enum": [
       "D3S",
       "D3L",
-      "Y3S",
+      "Y4S",
+      "Y4L",
       "P1S",
       "P1L",
       "P2S",
@@ -34,7 +35,7 @@
       ],
       [
         "Y4S",
-        "Y 3+N power",
+        "Y 3ph+N power",
         "The port provides a 4-wire 3-phase+Neutral power source"
       ],
       [
@@ -78,9 +79,9 @@
         "D3S"
       ],
       [
-        "Y3S",
+        "Y4S",
         "D3L",
-        "Y3S"
+        "Y4S"
       ],
       [
         "P1S",
@@ -98,9 +99,9 @@
         "P2S"
       ],
       [
-        "Y3S",
+        "Y4S",
         "P1L",
-        "Y3S"
+        "Y4S"
       ],
       [
         "D3L",

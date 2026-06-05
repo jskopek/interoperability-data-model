@@ -37,7 +37,7 @@
     "operatingTemperature": {
       "min": -4,
       "max": 150,
-      "unit": "F"
+      "unit": "°F"
     }
   },
   "productWarrantyYrs": 3

@@ -4,14 +4,22 @@
   "schema": {
     "type": "object",
     "properties": {
-      "length": {"$ref": "dimensions-schema.json#/schema"},
-      "width": {"$ref": "dimensions-schema.json#/schema"},
-      "depth": {"$ref": "dimensions-schema.json#/schema"},
-      "height": {"$ref": "dimensions-schema.json#/schema"},
-      "diameter": {"$ref": "dimensions-schema.json#/schema"},
       "size": {
         "type": "object",
         "properties": {
+          "units": {
+            "type": "string",
+            "enum": [
+              "in",
+              "ft",
+              "yds",
+              "mi",
+              "mm",
+              "cm",
+              "m",
+              "km"
+            ]
+          },
           "length": {
             "type": "number",
             "minimum": 0
@@ -31,19 +39,6 @@
           "diameter": {
             "type": "number",
             "minimum": 0
-          },
-          "units": {
-            "type": "string",
-            "enum": [
-              "in",
-              "ft",
-              "yds",
-              "mi",
-              "mm",
-              "cm",
-              "m",
-              "km"
-            ]
           }
         },
         "required": ["units"]

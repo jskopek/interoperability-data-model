@@ -10,7 +10,7 @@
     "properties": {
       "powerInput": {"$ref": "port-schema.json#/schema"},
       "altPowerInput": {"$ref": "port-schema.json#/schema"},
-      "controPort": {"$ref": "controlPort-schema.json#/schema"}
+      "controlPort": {"$ref": "controlPort-schema.json#/schema"}
     },
     "required": ["powerInput"]
   }

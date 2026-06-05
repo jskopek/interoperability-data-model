@@ -9,35 +9,25 @@
     
     "fileVersion: 1.01","fileDate 2025-09-26"
   ],
-    "type": "object",
+  "type": "object",
   "properties": {
     "IDMVersion": { "const": "1.2 2025-08-10" },
     "license": { "const": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved" },
     "productName": { "$ref": "productName-schema.json#/schema" },
     "productIdentifier": { "$ref": "productIdentifier-schema.json#/schema" },
     "typeSpecificParameters": { "$ref": "typeSpecifics-schema.json#/schema" },
-    "mechanical": { "$ref": "mechanical-schema.json#/schema" },
     "environmental": { "$ref": "environmental-schema.json#/schema" },
-    "productCategory": {
-      "type": "string",
-      "enum": [
-        "powerSource",
-        "converter",
-        "energyStorage",
-        "load",
-        "powerDistribution",
-        "circuitProtection",
-        "solution"
-      ]
-    },
     "manufacturer": { "$ref": "manufacturer-schema.json#/schema" },
     "productSeries": { "$ref": "productSeries-schema.json#/schema" },
     "datasheetHyperlink": {
       "type": "string",
+      "description":"This should hyperlink to a web page or PDf that is specific to this product.  (If there isn't one, leave blank.)",
       "format": "uri"
     },
     "description": {
+      "title":"Product description",
       "type": "string",
+      "description":"This is for a free-text description of the product. It should consist only of text, but may be up to 64kbytes long.",
       "format": "textarea",
       "minLength": 0,
       "maxLength": 65535

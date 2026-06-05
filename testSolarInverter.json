@@ -180,7 +180,7 @@
     "operatingTemperature": {
       "min": -13,
       "max": 113,
-      "unit": "F"
+      "unit": "°F"
     }
   },
   "mechanical": {

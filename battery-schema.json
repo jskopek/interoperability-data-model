@@ -9,35 +9,19 @@
     "properties": {
       "SOA": {"$ref": "SOA-schema.json#/schema"},
       "energyCapacity": {"$ref": "energy-schema.json#/schema"},
-      "dischargeRate": {
+      "meaasuredAtDischargeRate": {
         "type": "string",
         "pattern": "^C[0-9]+(.[0-9]+)?$"
       },
       "typicalCycleLife": {"type": "number"},
+      "minSOC":{
+        "title":"..when discharged to this percentage",
+        "type":"string",
+        "pattern":"^[0-9][0-9]%$"
+      },
       "chemistry": {"type": "string"},
-      "BMScommunication": {
-        "type": "object",
-        "properties": {
-          "protocol": {
-            "anyOf": [
-              {"type": "string"},
-              {
-                "type": "array",
-                "items": {"type": "string"}
-              }
-            ]
-          },
-          "interface": {
-            "anyOf": [
-              {"type": "string"},
-              {
-                "type": "array",
-                "items": {"type": "string"}
-              }
-            ]
-          }
-        }
-      }
+      "terminalType":{"$ref":"connection-schema.json#/schema"},
+      "BMSPort": {"$ref":"controlPort-schema.json#/schema"}
     },
     "required": [
       "energyCapacity",
