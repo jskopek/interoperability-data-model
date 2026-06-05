@@ -3,7 +3,7 @@
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "description": "Each type of microgrid component will have its own particular critical parameters, so we select the appropriate schema here",
   "icon": "microchip",
-  "formInput": "sectionPicker",
+  "formInput": "optionalFields",
   "fileVersion": "1.1",
   "fileDate":"2026-06-02",
   "changeRecord":"Motor option added 2025-10-08",
