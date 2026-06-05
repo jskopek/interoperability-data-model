@@ -49,7 +49,8 @@
     "IDMVersion",
     "license",
     "manufacturer",
-    "productIdentifier"
+    "productIdentifier",
+    "typeSpecificParameters"
   ],
   "selectionTool": {
     "$comment": "The selection tool will provide the filter, display and comparison sections with the values of those parameters listed in each of the referenced files",
