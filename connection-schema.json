@@ -2,6 +2,7 @@
   "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "$comment": "Options for connecting microgrid components.",
+  "description":"The type of connector provided for this port.  (If cable to be cut to length, choose \"unterminated\")",
   "fileVersion": "1.1",
   "fileDate":"2026-06-02",  
   "schema": {
