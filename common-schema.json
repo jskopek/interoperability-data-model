@@ -33,7 +33,7 @@
       "format": "uri"
     },
     "distributors": { "icon": "truck", "$ref": "distributors-schema.json#/schema" },
-    "systemsIntegrators": { "icon": "handshake", "$ref": "distributors-schema.json#/schema" },
+    "systemsIntegrators": { "icon": "handshake", "$ref": "systemIntegrators-schema.json#/schema" },
     "embargoedCountries": { "icon": "ban", "$ref": "embargoedCountries-schema.json#/schema" },
     "listingAuthorities": { "icon": "certificate", "$ref": "listingAuthorities-schema.json#/schema" },
     "files": { "icon": "folder-open", "$ref": "files-schema.json#/schema" },
