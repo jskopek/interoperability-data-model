@@ -13,6 +13,7 @@
       "SOA": {"$ref": "SOA-schema.json#/schema"},
       "VIrelationship": {
         "title":"V-I relationship",
+        "description":"How this port's current relates to its applied voltage. Pick the behaviour that matches the product — each option then asks for its own parameters.",
         "oneOf": [
           {
             "description":"Constant power loads are typically electronic products - they draw as much power as they need to operate - if the supply voltage falls, the current drawn increases.  Note that this does not mean that the power drawn will not vary, as the appliance does its thing.",
