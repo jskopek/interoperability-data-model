@@ -52,7 +52,7 @@
 						"minFrequency": {
 							"type": "string",
 							"pattern": ""
-						}
+						},
 						"maxFrequency": {
 							"type": "string",
 							"pattern": ""
@@ -74,7 +74,13 @@
 				{
 					"type": "object",
 					"properties": {
-						"criterion": { "const": "solenoid" }
+					  "criterion": { "const": "solenoid" },
+					  "coilResistance": {"$ref": "resistanceValue-schema.json#/schema"},
+					  "minDCVolts":{"title":"Recommended coil DC operating voltage",
+						"$ref": "voltageRating-schema.json#/schema"},
+					  "minACVolts":{"title":"Recommended coil AC operating voltage",
+						"$ref": "voltageRating-schema.json#/schema"},
+					  "coilContactIsolationVolts": {"$ref": "voltageRating-schema.json#/schema"}
 					}
 				}
 			]
