@@ -48,7 +48,7 @@
 				{
 					"type": "object",
 					"properties": {
-						"criterion": { "const": "frequencyDeviation" }
+						"criterion": { "const": "frequencyDeviation" },
 						"minFrequency": {
 							"type": "string",
 							"pattern": ""
