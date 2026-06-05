@@ -43,6 +43,16 @@
         }
       },
       {
+        "type": "object",
+        "properties": {
+          "connectionType": {"const": "barrelConnector"},
+          "barrelConnector": {"$ref": "barrelConnector-schema.json#/schema"}
+        },
+        "required": [
+          "connectionType",
+          "terminal"
+        ]
+      },      {
         "type": "array",
         "items": {
           "type": "object",
