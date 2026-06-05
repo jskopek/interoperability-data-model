@@ -28,7 +28,6 @@
       "contactRating": {"$ref": "mechanicalContact-schema.json#/schema"},
       "voltageRatingDC-2PolesInSeries": {"$ref": "voltageRating-schema.json#/schema"},
       "mechanical": {"$ref": "mechanical-schema.json#/schema"},
-      "connection": {"$ref": "connection-schema.json#/schema"},
       "reset": {
         "type": "string",
         "enum": [
