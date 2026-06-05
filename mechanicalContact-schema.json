@@ -2,6 +2,7 @@
   "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "$comment": "This schema is for any mechanical contact - isolator, breaker, connector",
+  "description":"Charateristics of any mechanical contact or fusible link",
   "fileVersion": "1.1",
   "fileDate":"2026-06-02",  
   "schema": {
@@ -16,16 +17,7 @@
       "maxVoltageToGround": {"$ref": "voltageRating-schema.json#/schema"},
       "insertedResistance": {"$ref": "resistanceValue-schema.json#/schema"},
       "AEndConnection": {"$ref": "connection-schema.json#/schema"},
-      "BEndConnection": {"$ref": "connection-schema.json#/schema"},
-      "configuration": {
-        "type": "string",
-        "enum": [
-          "Normally Open",
-          "Normally Closed",
-          "Change-over",
-          "Make-before-break"
-        ]
-      }
+      "BEndConnection": {"$ref": "connection-schema.json#/schema"}
     }
   }
 }
