@@ -7,13 +7,12 @@
   "schema": {
     "type": "object",
     "properties": {
-      "currentRating": {"$ref": "currentRating-schema.json#/schema"},
       "ACoperation":{"title":"AC operation supported","type":"boolean"},
       "DCoperation":{"title":"DC operation supported","type":"boolean"},
       "unsafeIfDCpresent": {"title":"AC product, unsafe if DC present",
         "type": "boolean"},      
-      "tripCriteria": {"$ref": "tripCriteria-schema.json#/schema"},
       "detectionMethod": {"$ref": "breakerType-schema.json#/schema"},
+      "tripCriteria": {"$ref": "tripCriteria-schema.json#/schema"},
       "numberOfPoles": {
         "type": "integer",
         "minimum": 1
@@ -28,7 +27,6 @@
       },
       "contactRating": {"$ref": "mechanicalContact-schema.json#/schema"},
       "voltageRatingDC-2PolesInSeries": {"$ref": "voltageRating-schema.json#/schema"},
-      "tripCurve": {"$ref": "breakerTripCurve-schema.json#/schema"},
       "mechanical": {"$ref": "mechanical-schema.json#/schema"},
       "connection": {"$ref": "connection-schema.json#/schema"},
       "reset": {
@@ -47,8 +45,7 @@
           "C/O"
         ]
       }
-    },
-    "required": ["currentRating"]
+    }
   },
   "selectionTool": {
     "filter": ["all"],
