@@ -50,7 +50,7 @@
         },
         "required": [
           "connectionType",
-          "terminal"
+          "barrelConnector"
         ]
       },      {
         "type": "array",
