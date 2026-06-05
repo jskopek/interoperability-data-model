@@ -22,28 +22,28 @@
 					"type": "object",
 					"properties": {
 						"criterion": { "const": "overVoltage" },
-						"ratedCurrent": { "$ref": "voltageRating-schema.json#/schema" }
+						"maximumVoltage": { "$ref": "voltageRating-schema.json#/schema" }
 					}
 				},
 				{
 					"type": "object",
 					"properties": {
 						"criterion": { "const": "underVoltage" },
-						"ratedCurrent": { "$ref": "voltageRating-schema.json#/schema" }
+						"minimumVoltage": { "$ref": "voltageRating-schema.json#/schema" }
 					}
 				},
 				{
 					"type": "object",
 					"properties": {
 						"criterion": { "const": "groundFault" },
-						"ratedCurrent": { "$ref": "currentRating-schema.json#/schema" }
+						"maxLeakageCurrent": { "$ref": "currentRating-schema.json#/schema" }
 					}
 				},
 				{
 					"type": "object",
 					"properties": {
 						"criterion": { "const": "phaseImbalance" },
-						"neutralCurrent": { "$ref": "currentRating-schema.json#/schema" }
+						"maxNeutralCurrent": { "$ref": "currentRating-schema.json#/schema" }
 					}
 				},
 				{
@@ -52,11 +52,21 @@
 						"criterion": { "const": "frequencyDeviation" },
 						"minFrequency": {
 							"type": "string",
-							"pattern": ""
+							"pattern": "^[0-9]+(.[0-9]+)?Hz$"
 						},
 						"maxFrequency": {
 							"type": "string",
-							"pattern": ""
+							"pattern": "^[0-9]+(.[0-9]+)?Hz$"
+						}
+					}
+				},
+				{
+					"type": "object",
+					"properties": {
+						"criterion": { "const": "ROCOF" },
+						"maxRateOfFrequencyChange": {
+							"type": "string",
+							"pattern": "^[0-9]+(.[0-9]+)?Hz/s$"
 						}
 					}
 				},
