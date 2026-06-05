@@ -45,6 +45,20 @@
       },
       "insulationMaterial": {"type": "string"},
       "armored": {"type": "boolean"},
+      "weightPerLength": {
+        "type": "object",
+        "properties": {
+          "value": {"type": "number"},
+          "units": {
+            "type": "string",
+            "enum": [
+              "g/m",
+              "kg/km",
+              "lbs/mi"
+            ]
+          }
+        }
+      },
       "conA":{"title":"Connector - A-end",
       "$ref":"connection-schema.json#/schema"},
       "conB":{"title":"Connector - B-end",
