@@ -91,6 +91,7 @@
 						"$ref": "voltageRating-schema.json#/schema"},
 					  "minACVolts":{"title":"Recommended coil AC operating voltage",
 						"$ref": "voltageRating-schema.json#/schema"},
+                      "connection": {"$ref": "connection-schema.json#/schema"},
 					  "coilContactIsolationVolts": {"$ref": "voltageRating-schema.json#/schema"}
 					}
 				}
