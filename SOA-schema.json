@@ -11,6 +11,8 @@
     "properties": {
       "maxVoltage": {"title":"Max voltage between terminals",
         "$ref": "voltageRating-schema.json#/schema"},
+      "nomVoltage": {"title":"Nominal operating voltage",
+        "$ref": "voltageRating-schema.json#/schema"},
       "minVoltage": {"title":"Minimum voltage for reliable operation",
         "$ref": "voltageRating-schema.json#/schema"},
       "maxReverseVoltage": {"$ref": "voltageRating-schema.json#/schema"},
