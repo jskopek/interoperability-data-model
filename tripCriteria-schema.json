@@ -8,16 +8,7 @@
   "schema": {
     "type": "object",
     "properties": {
-      "overCurrent": {"type": "boolean"},
-      "overVoltage": {"type": "boolean"},
-      "underVoltage": {"type": "boolean"},
-      "groundFault": {"type": "boolean"},
-      "arcFault": {"type": "boolean"},
-      "manualOperation": {"type": "boolean"},
-      "phaseImbalance": {"type": "boolean"},
-      "frequencyDeviation":{"type":"boolean"},
-      "ROCOF":{"type":"boolean"},
-      "externalSolenoid": {"type": "boolean"},
+      "tripCriteria": {"$ref": "tripLimits2.json#/schema"},
       "acronym": {
         "type": "string",
         "enum": [
