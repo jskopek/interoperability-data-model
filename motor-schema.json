@@ -9,7 +9,7 @@
     "type": "object",
     "properties": {
       "powerInput": {"$ref": "port-schema.json#/schema"},
-      "controPort": {"$ref": "controlPort-schema.json#/schema"},
+      "controlPort": {"$ref": "controlPort-schema.json#/schema"},
       "maxTorque":  {
           "type": "string",
           "pattern": "^([0-9]+(.[0-9]+)?)(Nm|ft-lbs)$"
