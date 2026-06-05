@@ -14,7 +14,8 @@
 					"type": "object",
 					"properties": {
 						"criterion": { "const": "overCurrent" },
-						"ratedCurrent": { "$ref": "currentRating-schema.json#/schema" }
+						"ratedCurrent": { "$ref": "currentRating-schema.json#/schema" },
+	                    "tripCurve": {"$ref": "breakerTripCurve-schema.json#/schema"}
 					}
 				},
 				{
