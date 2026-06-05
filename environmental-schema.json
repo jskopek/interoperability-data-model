@@ -7,6 +7,7 @@
     "type": "object",
     "properties": {
       "operatingTemperature": {
+        "icon": "temperature-half",
         "type": "object",
         "properties": {
           "min": {"type": "number"},
@@ -22,6 +23,7 @@
         "additionalProperties": false
       },
       "operatingHumidity": {
+        "icon": "droplet",
         "title":"Relative Humidity in Operation (%)",
         "type": "object",
         "$comment": "IEC 60068-2-11",

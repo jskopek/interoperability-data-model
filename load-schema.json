@@ -1,5 +1,6 @@
 {
   "IDMVersion": "1.2 2025-08-10",
+  "icon": "lightbulb",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "$comment": "This JSON schema is for any electrical load",
   "fileVersion": "1.0",

@@ -16,9 +16,9 @@
     "productName": { "$ref": "productName-schema.json#/schema" },
     "productIdentifier": { "$ref": "productIdentifier-schema.json#/schema" },
     "typeSpecificParameters": { "$ref": "typeSpecifics-schema.json#/schema" },
-    "environmental": { "$ref": "environmental-schema.json#/schema" },
-    "manufacturer": { "$ref": "manufacturer-schema.json#/schema" },
-    "productSeries": { "$ref": "productSeries-schema.json#/schema" },
+    "environmental": { "icon": "cloud-sun", "$ref": "environmental-schema.json#/schema" },
+    "manufacturer": { "icon": "building", "$ref": "manufacturer-schema.json#/schema" },
+    "productSeries": { "icon": "boxes-stacked", "$ref": "productSeries-schema.json#/schema" },
     "datasheetHyperlink": {
       "type": "string",
       "description":"This should hyperlink to a web page or PDf that is specific to this product.  (If there isn't one, leave blank.)",
@@ -32,18 +32,18 @@
       "minLength": 0,
       "maxLength": 65535
     },
-    "distributors": { "$ref": "distributors-schema.json#/schema" },
-    "systemsIntegrators": { "$ref": "distributors-schema.json#/schema" },
-    "embargoedCountries": { "$ref": "embargoedCountries-schema.json#/schema" },
+    "distributors": { "icon": "truck", "$ref": "distributors-schema.json#/schema" },
+    "systemsIntegrators": { "icon": "handshake", "$ref": "distributors-schema.json#/schema" },
+    "embargoedCountries": { "icon": "ban", "$ref": "embargoedCountries-schema.json#/schema" },
     "notRecommendedForNewDesigns": { "type": "boolean" },
-    "listingAuthorities": { "$ref": "listingAuthorities-schema.json#/schema" },
+    "listingAuthorities": { "icon": "certificate", "$ref": "listingAuthorities-schema.json#/schema" },
     "productWarrantyYrs": { "type": "number" },
-    "files": { "$ref": "files-schema.json#/schema" },
-    "images": { "$ref": "images-schema.json#/schema" },
+    "files": { "icon": "folder-open", "$ref": "files-schema.json#/schema" },
+    "images": { "icon": "images", "$ref": "images-schema.json#/schema" },
     "listPriceUSD": { "type": "number" },
     "fileVersion":{"type":"string", "default":"0.0"},
     "fileDate":{"type":"string", "format": "date"},
-    "changeRecord":{"$ref": "changeRecord-schema.json#/schema"}
+    "changeRecord":{"icon": "clock-rotate-left", "$ref": "changeRecord-schema.json#/schema"}
   },
   "required": [
     "IDMVersion",

@@ -1,5 +1,6 @@
 {
   "IDMVersion": "1.2 2025-08-10",
+  "icon": "car-battery",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "description": "This schema may be used for any battery presenting two power terminals, with no associated electronics apart from a BMS",
   "fileVersion": "1.0",

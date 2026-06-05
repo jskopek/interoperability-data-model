@@ -1,5 +1,6 @@
 {
   "IDMVersion": "1.2 2025-08-10",
+  "icon": "toggle-on",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "$comment": "This schema is suitable for any mechanical contactor or relay",
   "fileVersion": "1.1",

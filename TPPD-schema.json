@@ -1,5 +1,6 @@
 {
   "IDMVersion": "1.2 2025-08-10",
+  "icon": "gauge",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "$comment": "Schema for any two-port passive device (TPPD).  If necessary, the current return path is assumed and assumed to have zero resistance",
   "fileVersion": "1.0",
