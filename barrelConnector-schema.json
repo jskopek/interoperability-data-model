@@ -1,0 +1,45 @@
+{
+  "IDMVersion": "1.2 2025-08-10",
+  "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
+  "fileVersion": "1.0",
+  "fileDate": "2026-06-05",
+  "description": "Two-pole barrel connectors are often used for lump-on-the-wall and lump-in-line power supplies.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "outsideDiameter": { "$ref": "dimensions-schema.json#/schema" },
+      "insideDiameter": { "$ref": "dimensions-schema.json#/schema" },
+      "gender": {"type": "string", "enum": ["plug","socket"]},
+      "polarity": {
+        "type": "string",
+        "enum": ["CP","CN","US","AC"]
+      }
+    }
+  },
+  "dataEntry": {
+    "prompt": "Polarity",
+    "entryType": "dropdown",
+    "dropdownValues": [
+      [
+        "CP,",
+        "Centre-positive",
+        "This is the default. Ideally, I'd like a little diagram here, as conventionally indicated on the product"
+      ],
+      [
+        "CN,",
+        "Centre-negative",
+        "This polarity arrangement is increasingly rare"
+      ],
+      [
+        "US,",
+        "User-selectable",
+        "The product is provided with a connector that can be reversed to give either polarity"
+      ],
+      [
+        "AC,",
+        "AC output",
+        "As the output is AC, there is no polarity information"
+      ]
+    ]
+  }
+}
