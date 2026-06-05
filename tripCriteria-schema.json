@@ -2,8 +2,9 @@
   "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "$comment": "Reasons that a breaker might turn off.",
-  "fileVersion": "1.0",
-  "fileDate":"2025-09-26",  
+  "description":"Types of protection offered by the breaker",
+  "fileVersion": "1.1",
+  "fileDate":"2026-06-05",  
   "schema": {
     "type": "object",
     "properties": {
@@ -14,6 +15,8 @@
       "arcFault": {"type": "boolean"},
       "manualOperation": {"type": "boolean"},
       "phaseImbalance": {"type": "boolean"},
+      "frequencyDeviation":{"type":"boolean"},
+      "ROCOF":{"type":"boolean"},
       "externalSolenoid": {"type": "boolean"},
       "acronym": {
         "type": "string",
