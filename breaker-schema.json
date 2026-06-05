@@ -2,21 +2,22 @@
   "IDMVersion": "1.2 2025-08-10",
   "icon": "bolt",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
-  "fileVersion": "1.0",
-  "fileDate":"2025-09-26",
+  "fileVersion": "1.1",
+  "fileDate":"2026-06-05",
   "schema": {
     "type": "object",
     "properties": {
-      "TPPD": {"$ref": "TPPD-schema.json#/schema"},
+      "currentRating": {"$ref": "currentRating-schema.json#/schema"},
+      "ACoperation":{"title":"AC operation supported","type":"boolean"},
+      "DCoperation":{"title":"DC operation supported","type":"boolean"},
+      "unsafeIfDCpresent": {"title":"AC product, unsafe if DC present",
+        "type": "boolean"},      
+      "tripCriteria": {"$ref": "tripCriteria-schema.json#/schema"},
+      "detectionMethod": {"$ref": "breakerType-schema.json#/schema"},
       "numberOfPoles": {
         "type": "integer",
         "minimum": 1
       },
-      "currentRating": {"$ref": "currentRating-schema.json#/schema"},
-      "tripCriteria": {"$ref": "tripCriteria-schema.json#/schema"},
-      "detectionMethod": {"$ref": "breakerType-schema.json#/schema"},
-      "unsafeIfDCpresent": {"title":"Unsafe if DC present?",
-        "type": "boolean"},
       "isolationMechanism": {
         "type": "string",
         "enum": [
