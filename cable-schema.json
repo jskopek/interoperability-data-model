@@ -43,10 +43,11 @@
           "ACSR"
         ]
       },
-      "insulationMaterial": {"type": "string"},
+      "fumingCharacteristic": {"$ref": "fumes-schema.json#/schema"},
       "sheathColor":{"type":"string"},
       "coreColors":{"type":"string"},
       "armored": {"type": "boolean"},
+      "doubleInsulated": {"type": "boolean"},
       "weightPerLength": {
         "type": "object",
         "properties": {
