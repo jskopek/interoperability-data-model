@@ -21,10 +21,34 @@
         "type": "integer",
         "minimum": 1
       },
-      "length": {"$ref": "dimensions-schema.json#/schema"},
-      "OD":{"title":"Outside diameter",
-         "$ref": "dimensions-schema.json#/schema"
+      "profile":{
+        "title":"Cable profile",
+        "description":"Whether the cable is flat or round",
+        "oneOf":[
+          {
+            "type":"object",
+            "properties":{
+              "shape":{"const":"round"},
+              "OD":{"title":"Outside diameter",
+                 "$ref": "dimensions-schema.json#/schema"
+               }
+            }
+          },
+          {
+            "type":"object",
+            "properties":{
+              "shape":{"const":"flat"},
+              "width":{"title":"Cable width",
+                 "$ref": "dimensions-schema.json#/schema"
+               },
+              "height":{"title":"Cable height",
+                 "$ref": "dimensions-schema.json#/schema"
+               }
+            }
+          }
+        ]
       },
+      "length": {"$ref": "dimensions-schema.json#/schema"},
       "minRad":{"title":"Minimum Bending Radius",
          "$ref": "dimensions-schema.json#/schema"
       },
