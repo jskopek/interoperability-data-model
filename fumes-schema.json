@@ -1,0 +1,37 @@
+{
+  "IDMVersion": "1.2 2025-08-10",
+  "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
+  "$comment": "This info taken from https://www.fscables.com/other/blog/lsf-vs-lshf-lszh-there-is-a-difference.html, which we should accredit",
+  "title": "Cable fuming characteristics",
+  "description": "The fuming characteristic of burning cables is an important consideration for public and safety-critical locations.",
+  "fileVersion": "1.0",
+  "fileDate": "2026-06-08",
+  "schema": {
+    "type": "string",
+    "enum": [
+      "PVC",
+      "LSF",
+      "LSHF"
+    ]
+  },
+  "dataEntry": {
+    "entryType": "dropdown",
+    "dropdownValues": [
+      [
+        "PVC",
+        "Polyvinyl chloride",
+        "On burning, a standard PVC (Polyvinyl Chloride) insulated cable produces dense black smoke and a cocktail of harmful chemicals which can cause reduced visibility and suffocation"
+      ],
+      [
+        "LSF",
+        "Low Smole & Fume",
+        "Modified PVC, producing less smoke and HCl gas than PVC"
+      ],
+      [
+        "LSHF",
+        "Low Smoke Halogen Free",
+        "For buildings where fire safety is critical.  Also LS0H, LSZH, 0HLS, LSNH"
+      ]
+    ]
+  }
+}
