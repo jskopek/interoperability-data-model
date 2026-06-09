@@ -23,6 +23,7 @@
       "minACVolts":{"title":"Recommended coil AC operating voltage",
         "$ref": "voltageRating-schema.json#/schema"},
      "coilContactIsolationVolts": {"$ref": "voltageRating-schema.json#/schema"},
+      "coilConnections": {"$ref": "connection-schema.json#/schema"},
      "contactRating": {"title":"Contact Rating",
           "$ref": "mechanicalContact-schema.json#/schema"},
       "numberOfPolesNormallyOpen": {
@@ -41,8 +42,7 @@
         "type": "integer",
         "minimum": 0
       },
-      "mechanical": {"$ref": "mechanical-schema.json#/schema"},
-      "connection": {"$ref": "connection-schema.json#/schema"}
+      "mechanical": {"$ref": "mechanical-schema.json#/schema"}
     }
   }
 }
