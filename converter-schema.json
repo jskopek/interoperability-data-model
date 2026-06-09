@@ -17,7 +17,8 @@
           "port2",
           "firmware",
           "controlPort",
-          "the lower of P1 and P2"
+          "the lower of P1 and P2",
+          "BMS"
         ]
       },
       "controlPort": {"$ref": "controlPort-schema.json#/schema"},
