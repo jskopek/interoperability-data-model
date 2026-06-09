@@ -9,14 +9,16 @@
     "type": "object",
     "properties": {
       "SOA": {"$ref": "SOA-schema.json#/schema"},
-      "energyCapacity": {"$ref": "energy-schema.json#/schema"},
+      "energyCapacity": {"description":"The energy capacity of the battery when new, as expressed by the manufacturer, either in Ah or Wh",
+        "$ref": "energy-schema.json#/schema"},
       "meaasuredAtDischargeRate": {
+        "title":"  ... when measured at a discharge rate of: ",
         "type": "string",
         "pattern": "^C[0-9]+(.[0-9]+)?$"
       },
       "typicalCycleLife": {"type": "number"},
       "minSOC":{
-        "title":"..when discharged to this percentage",
+        "title":"..when discharged to this percentage: ",
         "type":"string",
         "pattern":"^[0-9][0-9]%$"
       },
