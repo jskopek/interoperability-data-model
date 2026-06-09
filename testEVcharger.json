@@ -1,5 +1,4 @@
 {
-  "$schema": "common-schema.json",
   "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "productName": "60kW DC-DC Mobile EV Charger",
@@ -54,12 +53,11 @@
         "VIrelationship": {
           "portType": "batteryChargingPort",
           "chargeCharacteristics": {
-            "portType": "batteryCharging",
-            "minNominalBattVolts": {
-              "value": 150,
+            "minBattVolts": {
+              "value": 300,
               "units": "V"
             },
-            "maxNominalBattVolts": {
+            "maxBattVolts": {
               "value": 1000,
               "units": "V"
             },
