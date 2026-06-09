@@ -22,7 +22,7 @@
         "type":"string",
         "pattern":"^[0-9][0-9]%$"
       },
-      "chemistry": {"type": "string"},
+      "chemistry": {"$ref": "chemistries-schema.json#/schema"},
       "terminalType":{"$ref":"connection-schema.json#/schema"},
       "BMSPort": {"$ref":"controlPort-schema.json#/schema"}
     },
