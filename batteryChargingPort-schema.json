@@ -7,10 +7,6 @@
     "$comment": "This schema is for a battery charging port",
     "type": "object",
     "properties": {
-      "portType": {
-        "type": "string",
-        "const": "batteryChargingPort"
-      },
       "nominalVoltage": {
         "anyOf": [
           {"$ref": "voltageRating-schema.json#/schema"},
