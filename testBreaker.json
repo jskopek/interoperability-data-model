@@ -1,69 +1,86 @@
 {
-  "$schema": "common-schema.json",
   "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
-  "productCategory": "circuitProtection",
+  "$schema": "common-schema.json",
   "productName": "Hydraulic-magnetic circuit breaker",
-  "productIdentifier": "CX2-B0-14-220-3MA-15G",
-  "productSeries": "CX-Series Hydraulic-magnetic circuit breakers",
   "description": "This data is taken from the data sheet linked below",
+  "productSeries": "CX-Series Hydraulic-magnetic circuit breakers",
+  "datasheetHyperlink": "https://www.carlingtech.com/sites/default/files/documents/CX-Series_Details_%26_COS_010714.pdf",
+  "fileVersion": "0.0",
+  "fileDate": "2026-06-09",
+  "productIdentifier": "CX2-B0-14-220-3MA-15G",
+  "typeSpecificParameters": {
+    "breaker": {
+      "DCoperation": true,
+      "detectionMethod": "Magnetic-hydraulic",
+      "tripCriteria": {
+        "tripCriteria": [
+          {
+            "criterion": "overCurrent",
+            "ratedCurrent": {
+              "value": 20,
+              "units": "A"
+            }
+          }
+        ],
+        "acronym": "MCB"
+      },
+      "numberOfPoles": 2,
+      "isolationMechanism": "mechanical",
+      "contactRating": {
+        "maxVoltageDC": {
+          "value": 380,
+          "units": "V"
+        },
+        "maxSteadyCurrent": {
+          "value": 20,
+          "units": "A"
+        },
+        "ampsBreakingCapacity": {
+          "value": 10,
+          "units": "kA"
+        },
+        "AEndConnection": {
+          "connectionType": "bolt",
+          "bolt": "10-32 (3/16\")"
+        },
+        "BEndConnection": {
+          "connectionType": "bolt",
+          "bolt": "10-32 (3/16\")"
+        }
+      },
+      "mechanical": {
+        "size": {
+          "units": "in",
+          "width": 0.755,
+          "depth": 2.259,
+          "height": 3.094
+        },
+        "weight": {
+          "value": 150,
+          "units": "g"
+        },
+        "mountingType": [
+          "DIN rail"
+        ]
+      },
+      "reset": "manual"
+    }
+  },
   "manufacturer": {
     "coName": "Littelfuse Carling Technologies",
     "webHomePageURL": "www.carlingtech.com"
   },
-  "datasheetHyperlink": "https://www.carlingtech.com/sites/default/files/documents/CX-Series_Details_%26_COS_010714.pdf",
-  "notRecommendedForNewDesigns": false,
-  "typeSpecificParameters": {
-    "componentType": "breaker",
-    "TPPD": {
-      "frequency": "DC",
-      "SOA": {
-        "maxVoltage": "380V",
-        "maxCurrentOut": "20A"
-      },
-      "mechanicalContact": {
-        "maxVoltageDC": "380V",
-        "maxSteadyCurrent": "20A",
-        "ampsBreakingCapacity": "10kA",
-        "configuration": "Normally Open"
-      },
-      "AEndConnection": {
-        "connectionType": "bolt",
-        "bolt": "10 -32,(3/16\")"
-      },
-      "BEndConnection": {
-        "connectionType": "bolt",
-        "bolt": "10 -32,(3/16\")"
-      }
-    },
-    "numberOfPoles": 2,
-    "tripCriteria": {"overCurrent": true},
-    "detectionMethod": "Magnetic-hydraulic",
-    "unsafeIfDCpresent": false,
-    "isolationMechanism": "mechanical",
-    "tripCurve": "Custom",
-    "mountingStyle": "Threaded insert: #6-32 UNC-2B, or M3X0.5-6H B ISO (2 per pole)",
-    "width": "0.755in",
-    "reset": "manual"
-  },
-  "listingAuthorities": [
-    {"LAName": "UL489 Listed"}
-  ],
   "environmental": {
     "operatingTemperature": {
       "min": -40,
       "max": 85,
       "unit": "°C"
     },
-    "operatingHumidity%": {"max": 98}
-  },
-  "mechanical": {
-    "depth": "2.259in",
-    "height": "3.094in",
-    "width": "0.755in",
-    "weight": {
-      "value": 150,
-      "unit": "g"
+    "operatingHumidity": {
+      "max": 98
     }
+  }
+}
   }
 }
