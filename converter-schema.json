@@ -10,6 +10,7 @@
     "properties": {
       "port1": {"$ref": "port-schema.json#/schema"},
       "port2": {"$ref": "port-schema.json#/schema"},
+      "galvanicSeparation":{"title":"Ports 1,2 galvanically separated?","type":"boolean"},
       "transferPowerSetBy": {
         "type": "string",
         "enum": [
