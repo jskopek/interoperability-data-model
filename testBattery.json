@@ -47,7 +47,7 @@
                     "value": 118.8,
                     "units": "kg"
                 },
-                "mountingType": "Indoor (stand)"
+                "mountingType": "Free-standing"
             },
             "BMSPort": {
                 "interface": "RS-485",
