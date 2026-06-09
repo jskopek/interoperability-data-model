@@ -10,17 +10,24 @@
     "type": "object",
     "properties": {
       "maxVoltage": {"title":"Max voltage between terminals",
+        "description":"This is the maximum voltage that should ever appear between the terminals - more than this may permanently damage the product. (This should always be a positive value.)",
         "$ref": "voltageRating-schema.json#/schema"},
       "nomVoltage": {"title":"Nominal operating voltage",
+        "description":"A nominal voltage is often used as a shorthand to roughly define the operational voltage.  If min/max voltages are provided, the nominal voltage should be somewhere between them.",
         "$ref": "voltageRating-schema.json#/schema"},
       "minVoltage": {"title":"Minimum voltage for reliable operation",
         "$ref": "voltageRating-schema.json#/schema"},
-      "maxReverseVoltage": {"$ref": "voltageRating-schema.json#/schema"},
-      "maxCurrentOut": {"$ref": "currentRating-schema.json#/schema"},
-      "maxCurrentIn": {"$ref": "currentRating-schema.json#/schema"},
-      "maxPowerIn": {"$ref": "powerRating-schema.json#/schema"},
-      "maxPowerOut": {"$ref": "powerRating-schema.json#/schema"},
-      "maxVoltageToGround": {"$ref": "voltageRating-schema.json#/schema"}
+      "DCpolarityAgnostic": {"type": "boolean"},
+      "maxCurrentOut": {"description":"The maximum conventional current that can flow out of the port through the positive or live terminal, without damage to the product, or causing circuit protection to trip. (This should always be a positive value.)",
+        "$ref": "currentRating-schema.json#/schema"},
+      "maxCurrentIn": {"description":"The maximum conventional current that can flow into the port through the positive or live terminal, without damage to the product, or causing circuit protection to trip. (This should always be a positive value.)",
+        "$ref": "currentRating-schema.json#/schema"},
+      "maxPowerIn": {"description":"The maximum power that can be absorbed continuously by the port, without damage to the product, or causing circuit protection to trip. (This should always be a positive value.)",
+        "$ref": "powerRating-schema.json#/schema"},
+      "maxPowerOut": {"description":"The maximum power that can be supplied continuously by the port, without damage to the product, or causing circuit protection to trip. (This should always be a positive value.)",
+        "$ref": "powerRating-schema.json#/schema"},
+      "maxVoltageToGround": {"description":"The insulation proof voltage from either terminal of the port to ground.",
+        "$ref": "voltageRating-schema.json#/schema"}
     }
   }
 }
