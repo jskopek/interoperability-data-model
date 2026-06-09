@@ -1,47 +1,59 @@
 {
-    "$schema": "common-schema.json",
-    "IDMVersion": "1.2 2025-08-10",
-    "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
-    "productCategory": "powerDistribution",
-    "productName": "Solar panel extension cable pair",
-    "productIdentifier": "REC20FT10PR-UK",
-    "manufacturer": {
-        "coName": "Renogy",
-        "webHomePageURL": "uk.renogy.com"
-    },
-    "description": "The Renogy Male to Female Solar Extension Cable allows you to make spatial adjustments to your solar power system in one simple step. This extension cable runs between the solar panel and charge controller or between two solar panels; allowing for greater space between both items. Like all other Solar Extension Cables; this product allows for greater customization of the solar power system.",
-    "productSeries": "Extension cables",
-    "datasheetHyperlink": "https://uk.renogy.com/collections/extension-cables-1/products/male-to-female-solar-extension-cable-a-pair",
-    "typeSpecificParameters": {
-        "cable": {
-            "TPPD": {
-                "AEndConnection": {
-                    "connectionType": "plugAndSocket",
-                    "type": "MC4",
-                    "gender": "plugPositive"
-                },
-                "BEndConnection": {
-                    "connectionType": "plugAndSocket",
-                    "type": "MC4",
-                    "gender": "plugNegative"
-                },
-                "SOA": {"maxVoltage": "1000V"}
-            },
-            "conductorMaterial": "copper",
-            "length": "10ft",
-            "numberOfConductors": 2,
-            "conductorSize": "10AWG, 6.0mm²"
-        }
-    },
-    "listingAuthorities": [
-        {"LAName": "TUV"}
-    ],
-    "environmental": {
-        "ingressProtection_IP": "IP65",
-        "operatingTemperature": {
-            "min": -40,
-            "max": 185,
-            "unit": "°C"
-        }
+  "IDMVersion": "1.2 2025-08-10",
+  "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
+  "fileVersion": "0.0",
+  "fileDate": "2026-06-09",
+  "$schema": "common-schema.json",
+  "productIdentifier": "REC20FT10PR-UK",
+  "productName": "Solar panel extension cable pair",
+  "description": "The Renogy Male to Female Solar Extension Cable allows you to make spatial adjustments to your solar power system in one simple step. This extension cable runs between the solar panel and charge controller or between two solar panels; allowing for greater space between both items. Like all other Solar Extension Cables; this product allows for greater customization of the solar power system.\n",
+  "productSeries": "Extension Cables",
+  "datasheetHyperlink": "https://uk.renogy.com/collections/extension-cables-1/products/male-to-female-solar-extension-cable-a-pair",
+  "typeSpecificParameters": {
+    "cable": {
+      "ratedVoltage": {
+        "value": 1000,
+        "units": "V"
+      },
+      "gndVoltage": {
+        "value": 1000,
+        "units": "V"
+      },
+      "numberOfConductors": 2,
+      "length": {
+        "value": 10,
+        "units": "ft"
+      },
+      "conductorSize": "10AWG, 6.0mm²",
+      "conductorMaterial": "copper",
+      "sheathColor": "Black",
+      "conA": {
+        "connectionType": "plugAndSocket",
+        "type": "MC4",
+        "gender": "plugPositive"
+      },
+      "conB": {
+        "connectionType": "plugAndSocket",
+        "type": "MC4",
+        "gender": "plugNegative"
+      }
     }
+  },
+  "manufacturer": {
+    "coName": "Renogy",
+    "webHomePageURL": "uk.renogy.com"
+  },
+  "environmental": {
+    "operatingTemperature": {
+      "min": -40,
+      "max": 185,
+      "unit": "°C"
+    },
+    "ingressProtection_IP": "IP65"
+  },
+  "listingAuthorities": [
+    {
+      "LAName": "TUV"
+    }
+  ]
 }
