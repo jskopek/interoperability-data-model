@@ -4,7 +4,6 @@
     "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
     "fileVersion":"1.1",
     "fileDate": "2026-06-03",
-    "productCategory": "energyStorage",
     "productName": "10.4kWh Battery Storage",
     "productIdentifier": "HV2600",
     "manufacturer": {
@@ -17,18 +16,26 @@
     "typeSpecificParameters": {
         "battery": {
             "SOA": {
-                "voltage": {
-                    "nominal": 204.8,
-                    "max": 233.6,
-                    "min": 160,
-                    "units": "V"
+                "maxVoltage": {
+                  "value": 233.6,
+                  "units": "V"
+                },
+                "nomVoltage": {
+                  "value": 204.8,
+                  "units": "V"
+                },
+                "minVoltage": {
+                  "value": 160,
+                  "units": "V"
                 },
                 "maxCurrentIn": "50A",
                 "maxCurrentOut": "60A"
             },
             "energyCapacity": "10240Wh",
-            "dischargeRate": "C10",
-            "chemistry": "LiFePO4",
+            "meaasuredAtDischargeRate": "C10",
+            "typicalCycleLife": 6000,
+            "minSOC": "30%",
+            "chemistry": "Lithium–iron–phosphate (LiFePO4)",
             "BMScommunication": {
                 "interface": "RS-485",
                 "protocol": "CAN"
