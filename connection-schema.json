@@ -2,16 +2,14 @@
   "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
   "$comment": "Options for connecting microgrid components.",
-  "description":"The type of connector provided for this port.  (If cable to be cut to length, choose \"unterminated\")",
-  "fileVersion": "1.1",
-  "fileDate":"2026-06-02",  
+  "fileVersion": "1.0",
+  "fileDate":"2025-09-26",  
   "schema": {
     "oneOf": [
       {
         "type": "object",
         "properties": {
           "connectionType": {"const": "bolt"},
-          "description":"The equipment has a bolt, so the cable will require an eyelet.",
           "bolt": {"$ref": "boltSize-schema.json#/schema"}
         },
         "required": [
@@ -22,14 +20,7 @@
       {
         "type": "object",
         "properties": {
-          "connectionType": {"const": "unterminated"}
-        }
-      },
-      {
-        "type": "object",
-        "properties": {
           "connectionType": {"const": "terminal"},
-          "description":"The connection has a screw that clamps down on the cable. (Single solid conductors can be terminated directly, but stranded cables will require a bootlace ferrule.)",
           "terminal": {"$ref": "wireSizes-schema.json#/schema"}
         },
         "required": [
@@ -41,23 +32,11 @@
         "type": "object",
         "properties": {
           "connectionType": {"const": "plugAndSocket"},
-          "description":"Any kind of plug and socket connector arrangement. (This section will be expanded in future, as different connector families have different detail parameters.)",
           "type": {"type": "string"},
           "gender": {"type": "string"}
         }
       },
       {
-        "type": "object",
-        "properties": {
-          "connectionType": {"const": "barrelConnector"},
-          "description":"Lump-on-the-wall and lump-in-line power supplies typically have barrel connectors to deliver power to the product.",
-          "barrelConnector": {"$ref": "barrelConnector-schema.json#/schema"}
-        },
-        "required": [
-          "connectionType",
-          "barrelConnector"
-        ]
-      },      {
         "type": "array",
         "items": {
           "type": "object",
@@ -77,5 +56,12 @@
         "required": ["other"]
       }
     ]
+  },
+  "definitions": {
+    "plugAndSocket": {
+      "connectionType": {"const": "plugAndSocket"},
+      "type": {"type": "string"},
+      "gender": {"type": "string"}
+    }
   }
 }
