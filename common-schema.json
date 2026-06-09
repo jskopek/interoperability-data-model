@@ -7,43 +7,81 @@
     "This is the JSON schema for all IDM products.  Listed below are all the parameters that are common to all types of product",
     "Particular types of product have their own schemas defined in separate files, which must be in the same folder, or sub-folders.",
     
-    "fileVersion: 1.01","fileDate 2025-09-26"
+    "fileVersion: 1.02","fileDate 2026-06-09"
   ],
   "type": "object",
   "properties": {
-    "productIdentifier": { "$ref": "productIdentifier-schema.json#/schema" },
-    "typeSpecificParameters": { "$ref": "typeSpecifics-schema.json#/schema" },
-    "manufacturer": { "icon": "building", "$ref": "manufacturer-schema.json#/schema" },
-    "environmental": { "icon": "cloud-sun", "$ref": "environmental-schema.json#/schema" },
+    "IDMVersion": { "const": "1.2 2025-08-10" },
+    "license": { "const": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved" },
     "productName": { "$ref": "productName-schema.json#/schema" },
-    "description": {
-      "title":"Product description",
+    "fileVersion": {
       "type": "string",
-      "description":"This is for a free-text description of the product. It should consist only of text, but may be up to 64kbytes long.",
+      "default": "0.0"
+    },
+    "changeRecord": {
+      "icon": "clock-rotate-left",
+      "$ref": "changeRecord-schema.json#/schema"
+    },    "fileDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "productIdentifier": { "$ref": "productIdentifier-schema.json#/schema" },
+    "productSeries": {
+      "icon": "boxes-stacked",
+      "$ref": "productSeries-schema.json#/schema"
+    },
+    "datasheetHyperlink": {
+      "type": "string",
+      "description": "This should hyperlink to a web page or PDf that is specific to this product.  (If there isn't one, leave blank.)",
+      "format": "uri"
+    },
+    "description": {
+      "title": "Product description",
+      "type": "string",
+      "description": "This is for a free-text description of the product. It should consist only of text, but may be up to 64kbytes long.",
       "format": "textarea",
       "minLength": 0,
       "maxLength": 65535
     },
-    "listPriceUSD": { "type": "number" },
-    "productWarrantyYrs": { "title": "Product Warranty (Years)", "type": "number" },
-    "productSeries": { "icon": "boxes-stacked", "$ref": "productSeries-schema.json#/schema" },
-    "datasheetHyperlink": {
-      "type": "string",
-      "description":"This should hyperlink to a web page or PDf that is specific to this product.  (If there isn't one, leave blank.)",
-      "format": "uri"
+    "typeSpecificParameters": { "$ref": "typeSpecifics-schema.json#/schema" },
+    "environmental": {
+      "icon": "cloud-sun",
+      "$ref": "environmental-schema.json#/schema"
     },
-    "distributors": { "icon": "truck", "$ref": "distributors-schema.json#/schema" },
-    "systemsIntegrators": { "icon": "handshake", "$ref": "systemIntegrators-schema.json#/schema" },
-    "embargoedCountries": { "icon": "ban", "$ref": "embargoedCountries-schema.json#/schema" },
-    "listingAuthorities": { "icon": "certificate", "$ref": "listingAuthorities-schema.json#/schema" },
-    "files": { "icon": "folder-open", "$ref": "files-schema.json#/schema" },
-    "images": { "icon": "images", "$ref": "images-schema.json#/schema" },
     "notRecommendedForNewDesigns": { "type": "boolean" },
-    "IDMVersion": { "const": "1.2 2025-08-10" },
-    "license": { "const": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved" },
-    "fileVersion":{"type":"string", "default":"0.0"},
-    "fileDate":{"type":"string", "format": "date"},
-    "changeRecord":{"icon": "clock-rotate-left", "$ref": "changeRecord-schema.json#/schema"}
+    "manufacturer": {
+      "icon": "building",
+      "$ref": "manufacturer-schema.json#/schema"
+    },
+    "listPriceUSD": { "type": "number" },
+    "productWarrantyYrs": {
+      "title": "Product Warranty (Years)",
+      "type": "number"
+    },
+    "distributors": {
+      "icon": "truck",
+      "$ref": "distributors-schema.json#/schema"
+    },
+    "systemsIntegrators": {
+      "icon": "handshake",
+      "$ref": "systemIntegrators-schema.json#/schema"
+    },
+    "embargoedCountries": {
+      "icon": "ban",
+      "$ref": "embargoedCountries-schema.json#/schema"
+    },
+    "listingAuthorities": {
+      "icon": "certificate",
+      "$ref": "listingAuthorities-schema.json#/schema"
+    },
+    "files": {
+      "icon": "folder-open",
+      "$ref": "files-schema.json#/schema"
+    },
+    "images": {
+      "icon": "images",
+      "$ref": "images-schema.json#/schema"
+    }
   },
   "required": [
     "IDMVersion",
