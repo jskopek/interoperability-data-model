@@ -36,25 +36,25 @@
             "typicalCycleLife": 6000,
             "minSOC": "30%",
             "chemistry": "Lithium–iron–phosphate (LiFePO4)",
-            "BMScommunication": {
+            "mechanical": {
+                "size": {
+                    "width": 420,
+                    "height": 116,
+                    "depth": 480,
+                    "units": "mm"
+                },
+                "weight": {
+                    "value": 118.8,
+                    "units": "kg"
+                },
+                "mountingType": "Indoor (stand)"
+            },
+            "BMSPort": {
                 "interface": "RS-485",
                 "protocol": "CAN"
             },
             "typicalCycleLife": 6000
         }
-    },
-    "mechanical": {
-        "size": {
-            "width": 420,
-            "height": 116,
-            "depth": 480,
-            "units": "mm"
-        },
-        "weight": {
-            "value": 118.8,
-            "units": "kg"
-        },
-        "mountingType": "Indoor (stand)"
     },
     "listingAuthorities": [
         {"LAName": "IEC62619"}
