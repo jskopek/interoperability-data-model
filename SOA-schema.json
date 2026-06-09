@@ -18,7 +18,7 @@
       "minVoltage": {"title":"Minimum voltage for reliable operation",
         "description":"",
         "$ref": "voltageRating-schema.json#/schema"},
-      "DCpolarityAgnostic": {"type": "boolean"},
+      "DCPolarityAgnostic": {"type": "boolean"},
       "maxCurrentOut": {"description":"The maximum conventional current that can flow out of the port through the positive or live terminal, without damage to the product, or causing circuit protection to trip. (This should always be a positive value.)",
         "$ref": "currentRating-schema.json#/schema"},
       "maxCurrentIn": {"description":"The maximum conventional current that can flow into the port through the positive or live terminal, without damage to the product, or causing circuit protection to trip. (This should always be a positive value.)",
