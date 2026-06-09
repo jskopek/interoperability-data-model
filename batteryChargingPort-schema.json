@@ -9,7 +9,7 @@
     "properties": {
       "portType": {
         "type": "string",
-        "const": "batteryCharging"
+        "const": "batteryChargingPort"
       },
       "nominalVoltage": {
         "anyOf": [
@@ -20,8 +20,10 @@
           }
         ]
       },
-      "minNominalBattVolts": {"$ref": "voltageRating-schema.json#/schema"},
-      "maxNominalBattVolts": {"$ref": "voltageRating-schema.json#/schema"},
+      "minBattVolts": {"title":"Minimum permitted battery voltage",
+         "$ref": "voltageRating-schema.json#/schema"},
+      "maxBattVolts": {"title":"Maximum permitted battery voltage",
+         "$ref": "voltageRating-schema.json#/schema"},
       "maxChargingCurrent":{"$ref":"currentRating-schema.json#/schema"},
       "outputPowerLimit":{"$ref":"powerRating-schema.json#/schema"},
       "chemistry": {"$ref": "chemistries-schema.json#/schema"},
