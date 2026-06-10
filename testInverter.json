@@ -2,96 +2,125 @@
   "$schema": "common-schema.json",
   "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
-  "$comment": "This is a template for creating product test files for IDM",
-  "fileVersion": "1.0",
-  "fileDate":"2025-09-26",
-  "productName": "Inverter3Kw",
-  "productIdentifier": "DCAC3000",
-  "productSeries": "EasyPower",
-  "description": "This is just a test file to check the validator for converters and inverters",
-  "manufacturer": {
-      "coName": "Evonet Energy Ltd",
-      "webHomePageURL": "www.evonet.com"
-  },
-  "distributors": [
-    {
-      "coName": "Digikey",
-      "webHomePageURL": "digikey.com"
-    },
-    {
-      "coName": "Farnell",
-      "webHomePageURL": "uk.farnell.com"
-    },
-    {
-        "coName": "Wind&Sun",
-        "webHomePageURL": "www.windandsun.co.uk"
-    }
-  ],
-  "embargoedCountries": [ "RU", "KP" ],
-  "notRecommendedForNewDesigns": false,
+  "productName": "Sunshine Solar 3kW Inverter",
+  "fileVersion": "0.0",
+  "fileDate": "2026-06-10",
+  "productIdentifier": "VP3000-48V",
+  "productSeries": "Solar inverters",
+  "datasheetHyperlink": "https://www.sunshinesolar.co.uk/media/ecom/prodpdf/VP3000.pdf",
+  "description": "With a robust 3000W continuous output, the VP3000 is capable of running multiple devices simultaneously, including kitchen appliances, power tools, entertainment systems, and charging equipment. Its pure sine wave output ensures compatibility with delicate electronics such as laptops, medical devices, TVs, and modern charging systems, reducing the risk of interference or damage. \n\nEngineered for reliability, the inverter features advanced protection mechanisms including overload, over-temperature, short-circuit, and low/high voltage safeguards. These built-in protections help maintain safe operation and extend the lifespan of both the inverter and your connected devices. \n\nThe Sunshine VP3000 is designed with efficiency and durability in mind, making it suitable for both mobile and stationary installations. Whether you're upgrading your off-grid setup, powering a mobile workspace, or ensuring dependable backup power, this inverter provides consistent performance when you need it most.\n\n\nKEY FEATURES\n\n3000W continuous output with high surge capacity \nPure sine wave technology for clean, stable power \n12V DC to 230V AC conversion\nSuitable for RVs, caravans, boats & off-grid systems \nSupports sensitive electronics and high-demand appliances \nBuilt-in protection: overload, short circuit, temperature & voltage safeguards \nEfficient, reliable and designed for long-term use .\nSoft Start\nRCD Compatibility - Switchable\nDual AC outlets\nUSB output 5VDC - 2.1A\n*Optional Extra - Remote On/Off Switch*",
   "typeSpecificParameters": {
-    "componentType": "converter",
-    "port1": {
-      "portType": "constantPower",
-      "portName": "input",
-      "powerDirection": "input",
-      "frequency": "DC",
-      "maxVolts": "50V",
-      "maxCurrentIn": "62A",
-      "powerLimitIn": "3100W",
-      "connector": {
-        "type": "bolt",
-        "size": "M6"
-      }
-
-    },
-    "port2": {
-      "portType": "constantVolts",
-      "portName": "output",
-      "powerDirection": "output",
-      "frequency": "P60",
-      "openCctVolts": {
-        "value": 115,
-        "units": "Vrms"
+    "converter": {
+      "port1": {
+        "portName": "Input",
+        "frequency": "DC",
+        "SOA": {
+          "maxVoltage": {
+            "value": 62,
+            "units": "V"
+          },
+          "nomVoltage": {
+            "value": 48,
+            "units": "V"
+          },
+          "minVoltage": {
+            "value": 43.2,
+            "units": "V"
+          },
+          "maxCurrentIn": {
+            "value": 75,
+            "units": "A"
+          }
+        },
+        "VIrelationship": {
+          "portType": "constantPower"
+        },
+        "connector": {
+          "connectionType": "other",
+          "other": "4 x 700mm - 16mm²"
+        }
       },
-      "maxCurrentOut": "27A",
-      "powerLimitOut": "3000W",
-      "theveninResistance": "500mΩ",
-      "connector": {
-        "type": "BS.1363",
-        "gender": "socket"
+      "port2": {
+        "portName": "Output",
+        "frequency": "P50",
+        "connectionType": "P1S",
+        "SOA": {
+          "nomVoltage": {
+            "value": 240,
+            "units": "Vrms"
+          },
+          "maxPowerOut": {
+            "value": 3000,
+            "units": "W"
+          }
+        },
+        "VIrelationship": {
+          "portType": "constantVoltage",
+          "openCctVolts": {
+            "value": 240,
+            "units": "V"
+          }
+        },
+        "groundWire": "offered",
+        "connector": {
+          "connectionType": "plugAndSocket",
+          "type": "BS.1363",
+          "gender": "Socket"
+        }
+      },
+      "transferPowerSetBy": "port2",
+      "staticPower": {
+        "value": 12,
+        "units": "W"
+      },
+      "transferEfficicency%P1toP2": 90,
+      "shortOverload": {
+        "peakPower": {
+          "value": 4500,
+          "units": "W"
+        },
+        "maxDuration": {
+          "value": 10,
+          "units": "s"
+        }
+      },
+      "mechanical": {
+        "size": {
+          "units": "mm",
+          "length": 402,
+          "width": 220,
+          "height": 150
+        },
+        "weight": {
+          "value": 7.95,
+          "units": "kg"
+        }
       }
-    },
-    "staticPower": "20W",
-    "transferPowerSetBy": "port2",
-    "transferEfficicency%P1toP2": 85
+    }
   },
   "environmental": {
-    "ingressProtection_IP": "IP67",
-    "RoHScompliant": true,
-    "DomesticComponentRequirement": false,
     "operatingTemperature": {
-      "min": -20,
-      "max": 80,
+      "min": -10,
+      "max": 50,
       "unit": "°C"
-    }
-  },
-  "productWarratyYrs": 3,
-
-  "mechanical": {
-    "dimensions": {
-      "length": 30,
-      "height": 8,
-      "width": 15,
-      "unit": "cm"
     },
-
-    "weight": {
-      "value": 5,
-      "unit": "kg"
+    "operatingHumidity": {
+      "min": 20,
+      "max": 90
     }
   },
-  "connector": "MC4"
-      
+  "manufacturer": {
+    "coName": "Sunshine Solar",
+    "webHomePageURL": "www.sunshinesolar.co.uk"
+  },
+  "listingAuthorities": [
+    {
+      "LAName": "Cenelec",
+      "standard": "EN61000-3-2-3, EN55022, EN55024,"
+    },
+    {
+      "LAName": "IEC",
+      "standard": "62040-1:2008"
+    }
+  ]
 }
-
