@@ -10,6 +10,7 @@
         "type": "object",
         "properties": {
           "connectionType": {"const": "bolt"},
+          "description":"The equipment has a bolt, so the cable will require an eyelet.",
           "bolt": {"$ref": "boltSize-schema.json#/schema"}
         },
         "required": [
