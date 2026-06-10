@@ -85,7 +85,7 @@
           "gender": "Free socket"
         }
       },
-      "galvanicSeparation": true,
+      "galvanicSeparation": "galvanically isolated",
       "transferPowerSetBy": "BMS",
       "mechanical": {
         "size": {
