@@ -59,7 +59,13 @@
       "staticPower": {"description":"The amount of power this product consumes when simply powered up, and not delivering power",
         "$ref": "powerRating-schema.json#/schema"},
       "energyCapacity": {"descripton":"If this product contains batteries, how much energy can it store?",
-        "$ref": "energy-schema.json#/schema"}
+        "$ref": "energy-schema.json#/schema"},
+      "upgradeable":{"title":"Software Field Upgradeable?",
+        "description":"Can the product's software/firmware be upgraded after installation?",
+        "type":"boolean"},
+      "endSupport":{"title":"Software supported until at least",
+        "description":"The manufacturer aims to continue supporting the product with software updates as necessary until at least this date.",
+        "type":"string", "format":"date"}
     }
   }
 }
