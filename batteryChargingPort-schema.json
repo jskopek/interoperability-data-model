@@ -23,7 +23,7 @@
       "maxChargingCurrent":{"$ref":"currentRating-schema.json#/schema"},
       "outputPowerLimit":{"$ref":"powerRating-schema.json#/schema"},
       "chemistry": {"$ref": "chemistries-schema.json#/schema"},
-      "BMScommunication": {
+      "BMSCommunication": {
         "type": "object",
         "properties": {
           "protocol": {
