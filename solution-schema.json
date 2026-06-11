@@ -51,6 +51,9 @@
           } 
         } 
       },
+      "transferTime":{"title":"Max interruption during switchover",
+        "description":"When switching between power sources, this is the longest period of interruption of supply the load will experience.",
+        "$ref":"duration-schema.json#/schema"},
       "outputsParallelable": {"description":"Can outputs be paralleled between two of this product to increase power capability? ",
         "type": "boolean"},
       "3for3phase": {"title":"3 units required for 3-phase system",
