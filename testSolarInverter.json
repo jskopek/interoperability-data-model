@@ -2,7 +2,6 @@
   "$schema": "common-schema.json",
   "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
-  "productCategory": "converter",
   "productName": "Sol-Ark 12K Essentials",
   "productIdentifier": "12K-2P",
   "description": "This data is taken from https://dcide.app/products/sol-ark-12k-essentials-900-00006-residential-hybrid-inverters-680a5a8ade89c214626ce2a1 and Sol-Ark's online datasheet'",
@@ -23,11 +22,11 @@
           "frequency": "S60",
           "connectionType": "P1L",
           "SOA": {
-            "nominalVoltage": "120V",
+            "nomVoltage": "120V",
             "maxCurrentIn": "-37.5A",
             "maxCurrentOut": "37.5A",
-            "powerLimitIn": "-9kW",
-            "power LimitOut": "9kW"
+            "maxPowerIn": "-9kW",
+            "maxPowerOut": "9kW"
           },
           "connector": {
             "connectionType": "terminal",
@@ -42,11 +41,11 @@
           "frequency": "N60",
           "connectionType": "P1L",
           "SOA": {
-            "nominalVoltage": "120V",
+            "nomVoltage": "120V",
             "maxCurrentIn": "-37.5A",
             "maxCurrentOut": "37.5A",
-            "powerLimitIn": "-9kW",
-            "power LimitOut": "9kW"
+            "maxPowerIn": "-9kW",
+            "maxPowerOut": "9kW"
           },
           "connector": {
             "connectionType": "terminal",
@@ -61,11 +60,11 @@
           "frequency": "P60",
           "connectionType": "P1L",
           "SOA": {
-            "nominalVoltage": "120V",
+            "nomVoltage": "120V",
             "maxCurrentIn": "-37.5A",
             "maxCurrentOut": "37.5A",
-            "powerLimitIn": "-9kW",
-            "power LimitOut": "9kW"
+            "maxPowerIn": "-9kW",
+            "maxPowerOut": "9kW"
           },
             "transferTime": "4ms",
           "connector": {
@@ -84,7 +83,7 @@
             "minVoltage": "125V",
             "maxVoltage": "500V",
             "maxCurrentIn": "20A",
-            "powerLimitIn": "6.5kW"
+            "maxPowerIn": "6.5kW"
           },
           "poleLocallyGrounded": "Live",
           "groundWire": "offered",
@@ -102,7 +101,7 @@
             "minVoltage": "125V",
             "maxVoltage": "500V",
             "maxCurrentIn": "20A",
-            "powerLimitIn": "6.5kW"
+            "maxPowerIn": "6.5kW"
           },
           "poleLocallyGrounded": "Live",
           "groundWire": "offered",
