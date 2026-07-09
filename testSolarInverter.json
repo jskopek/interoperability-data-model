@@ -145,20 +145,19 @@
         },
         {
           "portName": "Control Port",
-		  "VIrelationship": {
-			  "portType": "controlPort",
-	          "interface": [
-	            "10/100 Mbps Ethernet",
-	            "Wi-Fi"
-	          ],
-	          "protocol": [
-	            "CAN",
-	            "Modbus RTU"
-	          ]
+  		  "communication": {
+		     "interface": [
+		  	 "10/100 Mbps Ethernet",
+			 "Wi-Fi"
+		  ],
+			"protocol": [
+			  "CAN",
+			  "Modbus RTU"
+			]
 		  }
         }
-      ],
-      "functions": [
+      ]
+	  "functions": [
         {
           "fromPort":"grid",
           "toPort":"load",
