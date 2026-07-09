@@ -49,27 +49,27 @@
           "bolt": "10-32 (3/16\")"
         }
       },
-      "mechanical": {
-        "size": {
-          "units": "in",
-          "width": 0.755,
-          "depth": 2.259,
-          "height": 3.094
-        },
-        "weight": {
-          "value": 150,
-          "units": "g"
-        },
-        "mountingType": [
-          "DIN rail"
-        ]
-      },
       "reset": "manual"
     }
   },
   "manufacturer": {
     "coName": "Littelfuse Carling Technologies",
     "webHomePageURL": "www.carlingtech.com"
+  },
+  "mechanical": {
+    "size": {
+      "units": "in",
+      "width": 0.755,
+      "depth": 2.259,
+      "height": 3.094
+    },
+    "weight": {
+      "value": 150,
+      "units": "g"
+    },
+    "mountingType": [
+      "DIN rail"
+    ]
   },
   "environmental": {
     "operatingTemperature": {
