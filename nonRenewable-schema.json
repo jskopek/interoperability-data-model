@@ -10,7 +10,6 @@
     "properties": {
       "outputPort": {"$ref": "port-schema.json#/schema"},
       "alternativeOutput": {"$ref": "port-schema.json#/schema"},
-      "mechanical": {"$ref": "mechanical-schema.json#/schema"},
       "controlPort": {"$ref": "controlPort-schema.json#/schema"}
     }
   }
