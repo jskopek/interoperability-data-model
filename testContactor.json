@@ -44,23 +44,23 @@
       "numberOfPolesNormallyOpen": 1,
       "numberOfPolesNormallyClosed": 0,
       "numberOfPolesChangeover": 0,
-      "numberOfPolesMakeBeforeBreak": 0,
-      "mechanical": {
-        "size": {
-          "units": "mm",
-          "width": 80,
-          "depth": 90,
-          "height": 87
-        },
-        "weight": {
-          "value": 550,
-          "units": "g"
-        },
-        "mountingType": [
-          "Panel mount"
-        ]
-      }
+      "numberOfPolesMakeBeforeBreak": 0
     }
+  },
+  "mechanical": {
+    "size": {
+      "units": "mm",
+      "width": 80,
+      "depth": 90,
+      "height": 87
+    },
+    "weight": {
+      "value": 550,
+      "units": "g"
+    },
+    "mountingType": [
+      "Panel mount"
+    ]
   },
   "environmental": {
     "operatingTemperature": {
