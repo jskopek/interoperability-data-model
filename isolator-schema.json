@@ -12,7 +12,6 @@
         "type": "integer",
         "minimum": 1
       },
-      "mechanical": {"$ref": "mechanical-schema.json#/schema"},
       "lockable": {"type": "boolean"},
       "style": {
         "type": "string",
