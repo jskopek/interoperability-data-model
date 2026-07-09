@@ -145,15 +145,16 @@
         },
         {
           "portName": "Control Port",
+		  "portType":"controlPort",
   		  "communication": {
 		     "interface": [
 		  	 "10/100 Mbps Ethernet",
 			 "Wi-Fi"
 		  ],
-			"protocol": [
+		  "protocol": [
 			  "CAN",
 			  "Modbus RTU"
-			]
+		  ]
 		  }
         }
       ]
