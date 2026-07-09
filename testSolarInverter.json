@@ -145,7 +145,7 @@
         },
         {
           "portName": "Control Port",
-		  "portType":"controlPort",
+		  "VIrelationship": {"portType":"controlPort"},
   		  "communication": {
 		     "interface": [
 		  	 "10/100 Mbps Ethernet",
