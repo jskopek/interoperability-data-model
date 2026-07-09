@@ -44,6 +44,10 @@
       "maxLength": 65535
     },
     "typeSpecificParameters": { "$ref": "typeSpecifics-schema.json#/schema" },
+    "mechanical": {
+      "icon": "wrench",
+      "$ref": "mechanical-schema.json#/schema"
+    },
     "environmental": {
       "icon": "cloud-sun",
       "$ref": "environmental-schema.json#/schema"
