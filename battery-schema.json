@@ -24,7 +24,6 @@
       },
       "chemistry": {"description":"Select the correct battery schema. (If your particular battery chemistry isn't offered, it is also possible to type a value in.)",
         "$ref": "chemistries-schema.json#/schema"},
-      "mechanical":{"$ref":"mechanical-schema.json#/schema"},
       "terminalType":{"$ref":"connection-schema.json#/schema"},
       "BMSPort": {"$ref":"controlPort-schema.json#/schema"}
     },
