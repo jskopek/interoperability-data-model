@@ -70,7 +70,7 @@
             "type": "object",
             "properties": {
               "portType": { "const": "controlPort" },
-              "portRatings": { "$ref": "controlPort-schema.json#/schema" }
+              "communication": { "$ref": "controlPort-schema.json#/schema" }
             }
           },
           {
