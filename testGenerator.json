@@ -43,23 +43,23 @@
           "type": "Cigar lighter",
           "gender": "Socket"
         }
-      },
-      "mechanical": {
-        "size": {
-          "units": "cm",
-          "length": 65,
-          "width": 45,
-          "height": 45
-        },
-        "weight": {
-          "value": 21,
-          "units": "kg"
-        },
-        "mountingType": [
-          "Free-standing"
-        ]
       }
     }
+  },
+  "mechanical": {
+    "size": {
+      "units": "cm",
+      "length": 65,
+      "width": 45,
+      "height": 45
+    },
+    "weight": {
+      "value": 21,
+      "units": "kg"
+    },
+    "mountingType": [
+      "Free-standing"
+    ]
   },
   "environmental": {
     "operatingTemperature": {
