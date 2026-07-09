@@ -32,7 +32,6 @@
           }
         }
       },
-      "mechanical": {"$ref": "mechanical-schema.json#/schema"},
       "connector": {"type": "string"}
     }
   },
