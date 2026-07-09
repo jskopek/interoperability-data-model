@@ -62,7 +62,7 @@
   "productWarratyYrs": 3,
 
   "mechanical": {
-    "dimensions": {
+    "size": {
       "length": 100,
       "height": 80,
       "width": 10,
