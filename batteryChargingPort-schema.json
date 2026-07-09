@@ -33,29 +33,7 @@
           }
         ]
       },
-      "BMSCommunication": {
-        "type": "object",
-        "properties": {
-          "protocol": {
-            "anyOf": [
-              {"type": "string"},
-              {
-                "type": "array",
-                "items": {"type": "string"}
-              }
-            ]
-          },
-          "interface": {
-            "anyOf": [
-              {"type": "string"},
-              {
-                "type": "array",
-                "items": {"type": "string"}
-              }
-            ]
-          }
-        }
-      }
+      "BMSCommunication": {"$ref": "controlPort-schema.json#/schema"}
     },
     "required": [
       "chemistry"
