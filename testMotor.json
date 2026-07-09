@@ -31,7 +31,7 @@
     }
   },
   "mechanical": {
-    "size: {
+    "size": {
       "units":"mm",
       "diameter": 90,
       "length": 41.5
