@@ -149,7 +149,7 @@
             "10/100 Mbps Ethernet",
             "Wi-Fi"
           ],
-          "controlProtocol": [
+          "protocol": [
             "CAN",
             "Modbus RTU"
           ]
@@ -192,7 +192,7 @@
   "mechanical": {
     "weight": {
       "value": 78,
-      "unit": "lb"
+      "units": "lb"
     },
     "mountingType": "Wall-mount"
   }
