@@ -13,7 +13,6 @@
   "notRecommendedForNewDesigns": false,
   "listPriceUSD": 5299,
   "typeSpecificParameters": {
-    "componentType": "solution",
     "solution": {
       "ports": [
         {
@@ -114,16 +113,20 @@
           "portName": "battery",
           "VIrelationship": {
             "portType": "batteryChargingPort",
-            "minNominalBattVolts": "48V",
-            "maxNominalBattVolts": "48V",
+            "nominalVoltage": "48V",
             "BMScommunication": [
               "CAN",
               "RS-485",
               "Modbus"
+            ],
+            "chemistry": [
+              "Lithium-ion",
+           		"Lead-acid (flooded)",
+		          "Lead-acid AGM",
+		          "Lead-acid Gel",
+		          "Lead-acid VRLA"
             ]
           },
-          "frequency": "DC",
-          "connectionType": "DC",
           "SOA": {
             "minVoltage": "43V",
             "maxVoltage": "63V",
@@ -187,6 +190,6 @@
       "value": 78,
       "unit": "lb"
     },
-    "mountingType": "wall-mount"
+    "mountingType": "Wall-mount"
   }
 }
