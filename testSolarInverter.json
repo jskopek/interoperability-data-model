@@ -115,11 +115,13 @@
             "portType": "batteryChargingPort",
             "chargeCharacteristics": {
 				"nominalVoltage": "48V",
-	            "BMSCommunication": [
-	              "CAN",
-	              "RS-485",
-	              "Modbus"
-	            ],
+	            "BMSCommunication": {
+					"protocol":[
+				    "CAN",
+				    "RS-485",
+				    "Modbus"
+				  ]
+				},
 	            "chemistry": [
 	              "Lithium-ion",
 	           		"Lead-acid (flooded)",
