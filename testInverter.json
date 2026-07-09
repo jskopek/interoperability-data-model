@@ -84,19 +84,19 @@
           "value": 10,
           "units": "s"
         }
-      },
-      "mechanical": {
-        "size": {
-          "units": "mm",
-          "length": 402,
-          "width": 220,
-          "height": 150
-        },
-        "weight": {
-          "value": 7.95,
-          "units": "kg"
-        }
       }
+    }
+  },
+  "mechanical": {
+    "size": {
+      "units": "mm",
+      "length": 402,
+      "width": 220,
+      "height": 150
+    },
+    "weight": {
+      "value": 7.95,
+      "units": "kg"
     }
   },
   "environmental": {
