@@ -35,10 +35,13 @@
       },
       "fuseType": {
         "cartridge": {
-          "length": "38.1mm",
-          "diameter": "10.3mm",
+          "size": {
+            "units":"mm",
+            "length": 38.1,
+            "diameter": 10.3
+          },
           "weight": "6.4g"
-          }
+        }
       },
       "breakingCapacity": {
         "value": 10,
