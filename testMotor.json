@@ -31,8 +31,11 @@
     }
   },
   "mechanical": {
-    "diameter": "90mm",
-    "length": "41.5mm",
+    "size: {
+      "units":"mm",
+      "diameter": 90,
+      "length": 41.5
+    },
     "weight": "1.2kg"
   },
   "environmental": {
