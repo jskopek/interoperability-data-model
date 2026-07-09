@@ -13,8 +13,7 @@
         "$ref":"duration-schema.json#/schema"},
       "energyPerCycle": {"$ref":"energy-schema.json#/schema"},   
       "outputPort": {"$ref": "port-schema.json#/schema"},
-      "controlPort": {"$ref": "controlPort-schema.json#/schema"},
-      "mechanical": {"$ref": "mechanical-schema.json#/schema"}
+      "controlPort": {"$ref": "controlPort-schema.json#/schema"}
     }
   }
 }
