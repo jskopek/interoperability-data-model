@@ -48,8 +48,7 @@
           "peakPower": {"$ref": "powerRating-schema.json#/schema"},
           "maxDuration": {"$ref": "duration-schema.json#/schema"}
         }
-      },
-      "mechanical":{"$ref":"mechanical-schema.json#/schema"}
+      }
     }
   },
   "selectionTool": {
