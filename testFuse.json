@@ -1,66 +1,71 @@
 {
-  "$schema": "common-schema.json",
   "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
-  "productCategory": "circuitProtection",
-  "productName": "Fuse ATQ-Midget",
-  "productIdentifier": "ATQ25, EAN/UPC782001904623",
-  "productSeries": "ATQ",
-  "description": "Fuse ATQ - Midget - Time-Delay 500VAC 25A Ferrule\n\nAmp-Trap ATQ midget time-delay fuses are rated 500VAC with 42 ampere ratings from 1/10 to 30A. They are an excellent choice for supplemental protection of circuits where the available short circuit current does not exceed 10,000A. (Not for Branch Circuit Protection)\n\n*Supplemental protection of lighting, solenoid, motor and transformer circuits",
+  "productName": "ATQ25",
+  "fileVersion": "1.0",
+  "fileDate": "2026-07-09",
+  "productIdentifier": "ATQ25",
+  "productSeries": "ATQ - Midget - Time-Delay",
+  "datasheetHyperlink": "https://www.mersen.com/en/products/atq-midget-time-delay/atq25",
+  "description": "Amp-Trap ATQ midget time-delay fuse rated 500VAC, with ampere ratings from 1/10 to 30A (this part rated 25A). An excellent choice for supplemental protection of circuits where the available short circuit current does not exceed 10,000A (not for branch circuit protection). Time-delay characteristic of 12 seconds at 200 percent of rated current, suited to circuits with high inrush current such as lighting, solenoid, motor and transformer circuits. Ferrule-terminated, midget (10 x 38mm) body, compatible with UltraSafe fuse holders.",
   "manufacturer": {
     "coName": "Mersen",
     "webHomePageURL": "mersen.com"
   },
-  "datasheetHyperlink": "https://www.mersen.com/en/products/atq-midget-time-delay/atq25",
-  "notRecommendedForNewDesigns": false,
   "typeSpecificParameters": {
-    "componentType": "fuse",
     "fuse": {
-      "TPPD": {
-        "SOA": {
-          "maxVoltage": {
-            "value": 500,
-            "units": "V"
-          },
-          "maxCurrentIn": {
-            "value": 25,
-            "units": "A"
-          }
-        },
-        "frequency": "N5060",
-        "AEndConnection": {
-          "connectionType": "bolt",
-          "bolt": ""
-        }
-      },
       "fuseType": {
         "cartridge": {
           "size": {
-            "units":"mm",
-            "length": 38.1,
-            "diameter": 10.3
+            "units": "in",
+            "length": 1.5,
+            "diameter": 0.41
           },
-          "weight": "6.4g"
+          "weight": {
+            "value": 0.29,
+            "units": "oz"
+          }
         }
       },
-      "breakingCapacity": {
-        "value": 10,
-        "units": "kA"
+      "mechanicalContact": {
+        "maxVoltageAC": "500V",
+        "maxSteadyCurrent": "25A",
+        "ampsBreakingCapacity": "10kA",
+        "AEndConnection": {
+          "connectionType": "other",
+          "other": "Ferrule"
+        },
+        "BEndConnection": {
+          "connectionType": "other",
+          "other": "Ferrule"
+        }
       },
       "responseTime": "Time delay (TT)",
       "blownIndicator": false
     }
   },
+  "mechanical": {
+    "size": {
+      "units": "in",
+      "length": 1.5,
+      "diameter": 0.41
+    },
+    "weight": {
+      "value": 0.29,
+      "units": "oz"
+    }
+  },
+  "environmental": {
+    "RoHScompliant": true
+  },
   "listingAuthorities": [
-    {"LAName": "UL",
-    "standard":"248-14 File E33925"
+    {
+      "LAName": "UL",
+      "standard": "UL 248-14, File E33925"
     },
     {
       "LAName": "CSA",
-      "standard":"C22.2 No. 248.14"
+      "standard": "CSA C22.2 No. 248.14"
     }
   ]
-  
- 
- 
 }
