@@ -1,49 +1,74 @@
 {
-  "$schema": "common-schema.json",
   "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
-  "$comment": "This is a test file for any type of load",
+  "productName": "Industrial Series 3 LED Light Fixture (AC/DC combo) - 24V DC",
   "fileVersion": "1.0",
-  "fileDate":"2025-09-26",
-  "productName": "AC/DC Combination 48” Long Industrial Series LED DC Light Fixture",
+  "fileDate": "2026-07-09",
+  "productIdentifier": "T8IN-3LED-120/277AC(2L)-24DC(1L)-20-WH",
   "productSeries": "Industrial Series 3 LED Light Fixture (AC/DC combo)",
-  "description": "AC/DC Combination 48” Long Industrial Series LED DC Light Fixture with one (1) 24DC lamp and two (2) AC lamps",
-  "productCategory": "load",
+  "datasheetHyperlink": "https://www.marshalldc.com/product/industrial-series-3-led-light-fixture-ac-dc-combo/",
+  "description": "AC/DC combination 48\" long industrial series LED light fixture with white reflector, fitted with three T8 LED tube lamps: two (2) outer lamps operating on 120/277VAC and one (1) inner lamp operating on 24VDC, each rated 20W. AC lamps: 4000K color temperature, 2000 lumens, frosted finish, power factor >0.90, CRI (Ra) 80, 160 degree beam angle, 50,000 hour life, 3 year warranty. DC lamp: 4000K color temperature, 1800 lumens, milky beam polycarbonate lens, power factor >0.90, CRI >80, 160 degree beam angle, 50,000 hour life expectancy, operating temperature -4F to +150F, 3 year free replacement warranty. UL & CUL listed, manufactured in the U.S.A.",
   "manufacturer": {
     "coName": "Marshall DC Lighting",
-    "webHomePageURL": "www.marshalldc.com"
+    "webHomePageURL": "marshalldc.com"
   },
-  "productIdentifier": "T8IN-3LED-120/277AC(2L)-24DC(1L)-20-WH",
-  "datasheetHyperlink": "https://www.marshalldc.com/product/industrial-series-3-led-light-fixture-ac-dc-combo/",
   "typeSpecificParameters": {
     "load": {
       "powerInput": {
-        "frequency": "N5060",
+        "portName": "AC Input (2x Outer Lamps)",
+        "frequency": "S5060",
+        "connectionType": "P1S",
         "SOA": {
-          "nominalVoltage": "120/277Vrms",
-          "maxPowerIn": "20W"
+          "maxVoltage": {
+            "value": 277,
+            "units": "V"
+          },
+          "nomVoltage": {
+            "value": 120,
+            "units": "V"
+          },
+          "maxPowerIn": "40W"
+        },
+        "VIrelationship": {
+          "portType": "constantPower",
+          "powerLevel": "40W"
         }
       },
       "altPowerInput": {
+        "portName": "DC Input (1x Inner Lamp)",
         "frequency": "DC",
+        "connectionType": "DC",
         "SOA": {
-          "nominalVoltage": "24/48/125V",
+          "nomVoltage": "24V",
           "maxPowerIn": "20W"
+        },
+        "VIrelationship": {
+          "portType": "constantPower",
+          "powerLevel": "20W"
         }
       }
     }
   },
-  "environmental": {
-    "operatingTemperature": {
-      "min": -4,
-      "max": 150,
-      "unit": "°F"
+  "mechanical": {
+    "size": {
+      "units": "in",
+      "length": 48
     }
   },
+  "environmental": {
+    "operatingTemperature": {
+      "min": -20,
+      "max": 65.6,
+      "unit": "\u00b0C"
+    }
+  },
+  "listingAuthorities": [
+    {
+      "LAName": "UL"
+    },
+    {
+      "LAName": "CUL"
+    }
+  ],
   "productWarrantyYrs": 3
-  
-  
-  
-  
-  
 }
