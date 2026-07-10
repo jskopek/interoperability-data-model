@@ -15,17 +15,23 @@
   "typeSpecificParameters": {
     "motor": {
       "powerInput": {
+        "portName": "Power In",
+        "portType": "VIrelationshipUndefined",
         "frequency": "3VF",
         "SOA": {
-          "nominalVoltage": "48V",
-          "maxCurrentIn": "4.3A"
-        },
-        "maxVoltageToGround": "600Vrms"
+          "nomVoltage": "48V",
+          "maxCurrentIn": "4.3A",
+          "maxVoltageToGround": "600Vrms"
+        }
       },
-      "controPort": {
-        "interface": "12-pin connector",
-        "protocol": "4096 pulses per revolution"
-        },
+      "controlPort": {
+        "portName": "Control Port",
+        "portType": "controlPort",
+        "communication": {
+          "interface": "12-pin connector",
+          "protocol": "4096 pulses per revolution"
+        }
+      },
       "maxTorque": "0.96Nm",
       "ratedSpeed": "1670rpm"
     }
