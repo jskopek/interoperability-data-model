@@ -1,80 +1,92 @@
 {
-  "$schema": "common-schema.json",
   "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
-  "$comment": "This is a template for creating product test files for IDM",
+  "productName": "RSP320DC-BK 320W Monocrystalline Solar Panel",
   "fileVersion": "1.0",
-  "fileDate":"2025-09-26",
-  "productName": "SuperSolarPanels",
-  "productIdentifier": "ABC123",
-  "productSeries": "SuperSolar",
-  "description": "This is just a test file to check the validator",
+  "fileDate": "2026-07-10",
+  "productIdentifier": "RSP320DC-BK",
+  "productSeries": "Renogy Monocrystalline Solar Panel",
+  "description": "320W monocrystalline solar panel with a sleek, durable frame design, using high-efficiency monocrystalline silicon solar cells and frame corner supports for outdoor protection. Features high module conversion efficiency, top ranked PTC rating, quick and inexpensive mounting, 100% EL testing, and no hot spots guaranteed. Suited to residential solar power arrays, water pumping systems, signaling systems, and off-grid renewable energy applications for rooftop, RV, boat, and outdoor power systems.",
   "manufacturer": {
-      "coName": "Evonet Energy Ltd",
-      "webHomePageURL": "www.evonet.com"
+    "coName": "Renogy",
+    "webHomePageURL": "renogy.com"
   },
-  "distributors": [
-    {
-      "coName": "Digikey",
-      "webHomePageURL": "digikey.com"
-    },
-    {
-      "coName": "Farnell",
-      "webHomePageURL": "uk.farnell.com"
-    },
-    {
-        "coName": "Wind&Sun",
-        "webHomePageURL": "www.windandsun.co.uk"
-    }
-  ],
-  "embargoedCountries": [ "RU", "KP" ],
-  "notRecommendedForNewDesigns": false,
   "typeSpecificParameters": {
-    "componentType": "solar",
-    "panelType": "building-attached",
-    "panelTech": "polycrystalline",
-    "NOCTElectrical": {
-      "wattsPeak": "200W",
-      "openCircuitVolts": {
-        "value": 80,
-        "units": "V"
+    "solar": {
+      "outputPort": {
+        "portName": "DC Output",
+        "frequency": "DC",
+        "connectionType": "DC",
+        "SOA": {
+          "maxVoltage": "1000V",
+          "nomVoltage": "37.85V",
+          "maxCurrentOut": "8.92A"
+        },
+        "VIrelationship": {
+          "portType": "constantCurrent",
+          "currentLevel": "8.46A"
+        },
+        "connector": {
+          "connectionType": "plugAndSocket",
+          "type": "Solar Connectors (MC4-compatible)"
+        }
       },
-      "shortCircuitCurrent": {
-        "value": 30,
-        "units": "A"
-      }
-    },
-    "maxSystemVolts": "1500V",
-    "maxFuseRating": "20A",
-    "integralBypassDiode": true,
-    "performanceWarrantyYrs": 25
-  },
-  "environmental": {
-    "ingressProtection_IP": "IP67",
-    "RoHScompliant": true,
-    "DomesticComponentRequirement": false,
-    "operatingTemperature": {
-      "min": -20,
-      "max": 80,
-      "unit": "°C"
+      "panelType": "Monofacial",
+      "panelTech": "Monocrystalline",
+      "STCElectrical": {
+        "wattsPeak": "320W",
+        "openCircuitVolts": "43.82V",
+        "shortCircuitCurrent": "8.92A",
+        "MPPTVolts": "37.85V",
+        "MPPTCurrent": "8.46A",
+        "efficiency%": 22.2
+      },
+      "maxFuseRating": "20A",
+      "integralBypassDiode": true,
+      "performanceWarranty": {
+        "years": 25
+      },
+      "connector": "Solar Connectors (MC4-compatible)"
     }
   },
-  "productWarratyYrs": 3,
-
   "mechanical": {
     "size": {
-      "length": 100,
-      "height": 80,
-      "width": 10,
-      "units": "cm"
+      "units": "mm",
+      "length": 1640,
+      "width": 880,
+      "depth": 35
     },
-
     "weight": {
-      "value": 10,
-      "unit": "kg"
+      "value": 14.9,
+      "units": "kg"
     }
   },
-  "connector": "MC4"
-      
+  "environmental": {
+    "operatingTemperature": {
+      "min": -40,
+      "max": 85,
+      "unit": "\u00b0C"
+    }
+  },
+  "listingAuthorities": [
+    {
+      "LAName": "CE",
+      "standard": "EN IEC 61730"
+    },
+    {
+      "LAName": "CE",
+      "standard": "EN IEC 61215"
+    },
+    {
+      "LAName": "ISO 9001",
+      "standard": "Quality Management System"
+    }
+  ],
+  "productWarrantyYrs": 10,
+  "files": [
+    {
+      "filename": "RSP320DC-BKx2_Datasheet.pdf",
+      "fileType": ".pdf"
+    }
+  ]
 }
-
