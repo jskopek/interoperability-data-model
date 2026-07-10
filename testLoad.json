@@ -1,74 +1,30 @@
 {
+  "$schema": "common-schema.json",
   "IDMVersion": "1.2 2025-08-10",
   "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
-  "productName": "Industrial Series 3 LED Light Fixture (AC/DC combo) - 24V DC",
-  "fileVersion": "1.0",
-  "fileDate": "2026-07-09",
-  "productIdentifier": "T8IN-3LED-120/277AC(2L)-24DC(1L)-20-WH",
-  "productSeries": "Industrial Series 3 LED Light Fixture (AC/DC combo)",
-  "datasheetHyperlink": "https://www.marshalldc.com/product/industrial-series-3-led-light-fixture-ac-dc-combo/",
-  "description": "AC/DC combination 48\" long industrial series LED light fixture with white reflector, fitted with three T8 LED tube lamps: two (2) outer lamps operating on 120/277VAC and one (1) inner lamp operating on 24VDC, each rated 20W. AC lamps: 4000K color temperature, 2000 lumens, frosted finish, power factor >0.90, CRI (Ra) 80, 160 degree beam angle, 50,000 hour life, 3 year warranty. DC lamp: 4000K color temperature, 1800 lumens, milky beam polycarbonate lens, power factor >0.90, CRI >80, 160 degree beam angle, 50,000 hour life expectancy, operating temperature -4F to +150F, 3 year free replacement warranty. UL & CUL listed, manufactured in the U.S.A.",
+  "$comment": "This is a test file for any type of load",
+  "description": "This is a sample file for an AC electronic load (these usually exhibit a constant power VI characteristic, though of course the actual power depends on what the load is doing at this moment)",
+  "productIdentifier": "Sample AC electronic load",
   "manufacturer": {
-    "coName": "Marshall DC Lighting",
-    "webHomePageURL": "marshalldc.com"
+    "coName": "Electrical Loads Co Ltd",
+    "webHomePageURL": "https://www.anyco.com"
   },
   "typeSpecificParameters": {
     "load": {
       "powerInput": {
-        "portName": "AC Input (2x Outer Lamps)",
-        "frequency": "S5060",
+        "portName": "Power In",
+        "frequency": "N5060",
         "connectionType": "P1S",
         "SOA": {
-          "maxVoltage": {
-            "value": 277,
-            "units": "V"
-          },
-          "nomVoltage": {
-            "value": 120,
-            "units": "V"
-          },
-          "maxPowerIn": "40W"
+          "maxVoltage": "277V",
+          "nomVoltage": "240V",
+          "maxPowerIn": "400W"
         },
         "VIrelationship": {
           "portType": "constantPower",
-          "powerLevel": "40W"
-        }
-      },
-      "altPowerInput": {
-        "portName": "DC Input (1x Inner Lamp)",
-        "frequency": "DC",
-        "connectionType": "DC",
-        "SOA": {
-          "nomVoltage": "24V",
-          "maxPowerIn": "20W"
-        },
-        "VIrelationship": {
-          "portType": "constantPower",
-          "powerLevel": "20W"
+          "powerLevel": "300W"
         }
       }
     }
-  },
-  "mechanical": {
-    "size": {
-      "units": "in",
-      "length": 48
-    }
-  },
-  "environmental": {
-    "operatingTemperature": {
-      "min": -20,
-      "max": 65.6,
-      "unit": "\u00b0C"
-    }
-  },
-  "listingAuthorities": [
-    {
-      "LAName": "UL"
-    },
-    {
-      "LAName": "CUL"
-    }
-  ],
-  "productWarrantyYrs": 3
+  }
 }
