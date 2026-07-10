@@ -16,7 +16,7 @@
     "motor": {
       "powerInput": {
         "portName": "Power In",
-        "portType": "VIrelationshipUndefined",
+        "VIrelationship": { "portType": "VIrelationshipUndefined" },
         "frequency": "3VF",
         "SOA": {
           "nomVoltage": "48V",
@@ -26,7 +26,7 @@
       },
       "controlPort": {
         "portName": "Control Port",
-        "portType": "controlPort",
+        "VIrelationship": { "portType": "controlPort" },
         "communication": {
           "interface": "12-pin connector",
           "protocol": "4096 pulses per revolution"
